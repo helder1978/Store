@@ -63,7 +63,10 @@ namespace DotNetNuke.Modules.Store.WebControls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList cmbCategory;
+
+        protected global::System.Web.UI.WebControls.DropDownList ddArchive;
         
+
         /// <summary>
         /// grdProducts control.
         /// </summary>

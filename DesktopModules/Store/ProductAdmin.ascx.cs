@@ -249,7 +249,10 @@ namespace DotNetNuke.Modules.Store.WebControls
 				ProductController controller = new ProductController();
 				//ArrayList productList = controller.GetCategoryProducts(categoryID, true);
                 String searchTerm = this.tbProductFilter.Text;
-                ArrayList productList = controller.GetSearchedProducts(-1, searchTerm, true);
+                //ArrayList productList = controller.GetSearchedProducts(-1, searchTerm, true);
+                bool archived = false;
+                if (int.Parse(this.ddArchive.SelectedValue) == 1) archived = true;
+                ArrayList productList = controller.GetSearchedProducts(-1, searchTerm, archived);
 
 				if (productList.Count > 0)
 				{
