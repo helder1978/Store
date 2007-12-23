@@ -8,6 +8,15 @@
     <tr>
       <td valign="top" noWrap align="center"><table cellspacing="3" cellpadding="0" border="0">
           <tr>
+            <td class="NormalBold">Filter by Archive Status</td>
+            <td>
+                <asp:DropDownList id="ddArchive" runat="server" AutoPostBack="false">
+                    <asp:ListItem Value="0" Text="Not Archived" Selected="True"></asp:ListItem>
+                    <asp:ListItem Value="1" Text="Archived"></asp:ListItem>
+                </asp:DropDownList>
+            </td>
+          </tr>
+          <tr>
             <td class="NormalBold" nowrap="true" width="150">
                 Filter Product By Name
                 <dnn:label id="lblCategory" visible="false" controlname="lblCategory" runat="server" cssclass="NormalBold" suffix=":"></dnn:label>

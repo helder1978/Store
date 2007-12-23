@@ -212,7 +212,8 @@ namespace DotNetNuke.Modules.Store.Catalog
         public SearchItemInfoCollection GetSearchItems(ModuleInfo moduleInfo)
 		{
 			// Get all products
-            ArrayList productList = GetPortalAllProducts(moduleInfo.PortalID);
+            //ArrayList productList = GetPortalAllProducts(moduleInfo.PortalID);
+            ArrayList productList = GetPortalProducts(moduleInfo.PortalID, false, false);   // canadean change: only index products that aren't archived
 	
 			// Create search item collection
 			SearchItemInfoCollection searchItemList = new SearchItemInfoCollection(); 
