@@ -211,32 +211,35 @@ namespace DotNetNuke.Modules.Store.Catalog
 
         public SearchItemInfoCollection GetSearchItems(ModuleInfo moduleInfo)
 		{
-			// Get all products
-            //ArrayList productList = GetPortalAllProducts(moduleInfo.PortalID);
-            //ArrayList productList = GetPortalProducts(moduleInfo.PortalID, false, false);   // canadean change: only index products that aren't archived 
-            ArrayList productList = GetCategoryProducts(4, false);   // canadean change: only index products that aren't archived (and real products [categoryId = 4], not DE [categoryId = 2])
-	
 			// Create search item collection
 			SearchItemInfoCollection searchItemList = new SearchItemInfoCollection(); 
-			foreach(ProductInfo product in productList)
+
+			if(moduleInfo.ModuleID == 621) // Only index through the main shop page navigation
 			{
-				// Get user identifier
-				int userID = Null.NullInteger;
-                userID = int.Parse(product.CreatedByUser);
+				// Get all products
+				//ArrayList productList = GetPortalAllProducts(moduleInfo.PortalID);
+				//ArrayList productList = GetPortalProducts(moduleInfo.PortalID, false, false);   // canadean change: only index products that aren't archived 
+				ArrayList productList = GetCategoryProducts(4, false);   // canadean change: only index products that aren't archived (and real products [categoryId = 4], not DE [categoryId = 2])
 
-				// Create title
-				string title = System.Web.HttpUtility.HtmlDecode(product.ProductTitle);
+				foreach(ProductInfo product in productList)
+				{
+					// Get user identifier
+					int userID = Null.NullInteger;
+					userID = int.Parse(product.CreatedByUser);
 
-				// Create content
-                string content = System.Web.HttpUtility.HtmlDecode(title) + ": " + System.Web.HttpUtility.HtmlDecode(product.Description) + " " + System.Web.HttpUtility.HtmlDecode(product.Summary);
+					// Create title
+					string title = System.Web.HttpUtility.HtmlDecode(product.ProductTitle);
 
-                SearchItemInfo searchItem = new SearchItemInfo(title,
-                    System.Web.HttpUtility.HtmlDecode(product.Summary), userID, product.CreatedDate, moduleInfo.ModuleID,
-                    product.ProductID.ToString(), content, "ProductID=" + product.ProductID.ToString());
+					// Create content
+					string content = System.Web.HttpUtility.HtmlDecode(title) + ": " + System.Web.HttpUtility.HtmlDecode(product.Description) + " " + System.Web.HttpUtility.HtmlDecode(product.Summary);
 
-				searchItemList.Add(searchItem);
+					SearchItemInfo searchItem = new SearchItemInfo(title,
+						System.Web.HttpUtility.HtmlDecode(product.Summary), userID, product.CreatedDate, moduleInfo.ModuleID,
+						product.ProductID.ToString(), content, "ProductID=" + product.ProductID.ToString());
+
+					searchItemList.Add(searchItem);
+				}
 			}
-
 			return searchItemList;
 		}
 
