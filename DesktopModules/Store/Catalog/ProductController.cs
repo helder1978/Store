@@ -213,7 +213,8 @@ namespace DotNetNuke.Modules.Store.Catalog
 		{
 			// Get all products
             //ArrayList productList = GetPortalAllProducts(moduleInfo.PortalID);
-            ArrayList productList = GetPortalProducts(moduleInfo.PortalID, false, false);   // canadean change: only index products that aren't archived
+            //ArrayList productList = GetPortalProducts(moduleInfo.PortalID, false, false);   // canadean change: only index products that aren't archived 
+            ArrayList productList = GetCategoryProducts(4, false);   // canadean change: only index products that aren't archived (and real products [categoryId = 4], not DE [categoryId = 2])
 	
 			// Create search item collection
 			SearchItemInfoCollection searchItemList = new SearchItemInfoCollection(); 
