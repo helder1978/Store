@@ -1,0 +1,166 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Change CreatedByUser column to an int for performance **/
+
+ALTER TABLE {databaseOwner}{objectQualifier}Links ADD
+	CreatedByUserID int NULL
+GO
+
+update {databaseOwner}{objectQualifier}Links
+set    CreatedByUserID = convert(int,CreatedByUser)
+GO
+
+ALTER TABLE {databaseOwner}{objectQualifier}Links
+	DROP COLUMN CreatedByUser
+GO
+
+ALTER TABLE {databaseOwner}{objectQualifier}Links ADD
+	CreatedByUser int NOT NULL CONSTRAINT DF_{objectQualifier}Links_CreatedByUser DEFAULT 0
+GO
+
+update {databaseOwner}{objectQualifier}Links
+set    CreatedByUser = CreatedByUserID
+GO
+
+ALTER TABLE {databaseOwner}{objectQualifier}Links
+	DROP COLUMN CreatedByUserID
+GO
+
+ALTER TABLE {databaseOwner}{objectQualifier}Links
+	DROP CONSTRAINT DF_{objectQualifier}Links_CreatedByUser
+GO
+
+/** Drop Existing Stored Procedures **/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}AddLink]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}AddLink
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}GetLink]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}GetLink
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}GetLinks]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}GetLinks
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}UpdateLink]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}UpdateLink
+GO
+
+/** Create Optimized Stored Procedures **/
+
+create procedure {databaseOwner}{objectQualifier}AddLink
+
+	@ModuleId    int,
+	@UserId      int,
+	@Title       nvarchar(100),
+	@Url         nvarchar(250),
+	@ViewOrder   int,
+	@Description nvarchar(2000)
+
+as
+
+insert into {objectQualifier}Links (
+	ModuleId,
+	CreatedByUser,
+	CreatedDate,
+	Title,
+	Url,
+	ViewOrder,
+	Description
+)
+values (
+	@ModuleId,
+	@UserId,
+	getdate(),
+	@Title,
+	@Url,
+	@ViewOrder,
+	@Description
+)
+
+select SCOPE_IDENTITY()
+
+GO
+
+CREATE procedure {databaseOwner}{objectQualifier}GetLink
+
+@ItemId   int,
+@ModuleId int
+
+as
+
+select  {objectQualifier}Links.ItemId,
+	{objectQualifier}Links.ModuleId,
+	{objectQualifier}Links.Title,
+	{objectQualifier}Links.URL,
+        {objectQualifier}Links.ViewOrder,
+        {objectQualifier}Links.Description,
+        {objectQualifier}Links.CreatedByUser,
+        {objectQualifier}Links.CreatedDate,
+        {objectQualifier}UrlTracking.TrackClicks,
+        {objectQualifier}UrlTracking.NewWindow
+from    {objectQualifier}Links
+left outer join {objectQualifier}UrlTracking on {objectQualifier}Links.URL = {objectQualifier}UrlTracking.Url and {objectQualifier}UrlTracking.ModuleId = @ModuleID 
+where  {objectQualifier}Links.ItemId = @ItemId
+and    {objectQualifier}Links.ModuleId = @ModuleId
+
+GO
+
+CREATE procedure {databaseOwner}{objectQualifier}GetLinks
+
+@ModuleId int
+
+as
+
+select {objectQualifier}Links.ItemId,
+       {objectQualifier}Links.ModuleId,
+       {objectQualifier}Links.CreatedByUser,
+       {objectQualifier}Links.CreatedDate,
+       {objectQualifier}Links.Title,
+       {objectQualifier}Links.URL,
+       {objectQualifier}Links.ViewOrder,
+       {objectQualifier}Links.Description,
+       {objectQualifier}UrlTracking.TrackClicks,
+       {objectQualifier}UrlTracking.NewWindow
+from   {objectQualifier}Links
+left outer join {objectQualifier}UrlTracking on {objectQualifier}Links.URL = {objectQualifier}UrlTracking.Url and {objectQualifier}UrlTracking.ModuleId = @ModuleID 
+where  {objectQualifier}Links.ModuleId = @ModuleId
+order by {objectQualifier}Links.ViewOrder, {objectQualifier}Links.Title
+
+GO
+
+create procedure {databaseOwner}{objectQualifier}UpdateLink
+
+	@ItemId      int,
+	@UserId      int,
+	@Title       nvarchar(100),
+	@Url         nvarchar(250),
+	@ViewOrder   int,
+	@Description nvarchar(2000)
+
+as
+
+update {objectQualifier}Links
+set    CreatedByUser = @UserId,
+       CreatedDate   = GetDate(),
+       Title         = @Title,
+       Url           = @Url,
+       ViewOrder     = @ViewOrder,
+       Description   = @Description
+where  ItemId = @ItemId
+
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

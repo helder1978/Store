@@ -1,0 +1,571 @@
+/* ================================
+    CSS STYLES FOR NEWS SECTION
+   ================================
+*/ 
+
+
+.newsGreenTitle
+{
+    font-family: "arial";
+    font-size: 15px;
+    text-align: left; 
+    color: #91C679;
+    padding: 15px 0pt 15px 0pt;
+    font-weight:bold;
+}
+
+.newsBlueTitle
+{
+    font-family: "arial";
+    font-size: 15px;
+    text-align: left; 
+    color: #094891;
+    padding: 15px 0pt 15px 0pt;
+    font-weight:bold;
+}
+
+.newsTitle
+{
+    font-family: "arial";
+    font-size: 11px;
+    text-align: left; 
+    color: #575865;
+    padding: 15px 0pt 15px 0pt;
+    font-weight:bold;
+}
+
+.newsLink
+{
+    font-family: "arial";
+    font-size: 11px;
+    text-align: left; 
+    color: #6095C1;
+    padding: 15px 0pt 15px 0pt;
+    font-weight:bold;
+}
+
+.newsDate
+{
+    font-family: "arial";
+    font-size: 11px;
+    text-align: left; 
+    color: #54738D;
+    padding: 15px 0pt 15px 0pt;
+    font-weight:bold;
+}
+
+.newsPagingLinks
+{
+    font-family: "arial";
+    font-size: 13px;
+    text-align: left; 
+    color: #094891;
+    padding: 15px 0pt 15px 0pt;
+    font-weight:bold;
+}
+
+.newsPagingNumbers
+{
+    font-family: "arial";
+    font-size: 12px;
+    text-align: left; 
+    color: #003366;
+    padding: 15px 0pt 15px 0pt;
+    font-weight:bold;
+}
+
+
+/* ================================
+    CSS STYLES FOR TWO COLUMN TEXT
+   ================================
+*/   
+.wrapingtwocolumnsbox {
+float :left;
+width:100%;
+clear:both;
+}
+.textleftcolumn {
+float:left;
+width:48%;
+border:1px dotted #003366;
+}
+.textrightcolumn {
+Float:right;
+width:48%;
+border:1px dotted #003366;
+}
+
+
+/* ================================
+    CSS STYLES FOR DotNetNuke
+   ================================
+*/   
+
+
+/* PAGE BACKGROUND */
+/* background color for the header at the top of the page  */
+.HeadBg {
+}
+
+/* background color for the content part of the pages */
+Body
+{
+}
+
+.ControlPanel {
+}
+
+/* background/border colors for the selected tab */
+.TabBg {
+}
+
+.LeftPane  { 
+}
+
+.ContentPane  { 
+}
+
+.RightPane  { 
+}
+
+/* text style for the selected tab */
+.SelectedTab {
+}
+
+/* hyperlink style for the selected tab */
+A.SelectedTab:link {
+}
+
+A.SelectedTab:visited  {
+}
+
+A.SelectedTab:hover    {
+}
+
+A.SelectedTab:active   {
+}
+
+/* text style for the unselected tabs */
+.OtherTabs {
+}
+    
+/* hyperlink style for the unselected tabs */
+A.OtherTabs:link {
+}
+
+A.OtherTabs:visited  {
+}
+
+A.OtherTabs:hover    {
+}
+
+A.OtherTabs:active   {
+}
+
+/* GENERAL */
+/* style for module titles */
+.Head   {
+}
+
+/* style of item titles on edit and admin pages */
+.SubHead    {
+}
+
+/* module title style used instead of Head for compact rendering by QuickLinks and Signin modules */
+.SubSubHead {
+}
+
+/* text style used for most text rendered by modules XXX*/
+.Normal
+{
+   font-family: "arial";
+   font-size: 11px;
+   text-align: left; 
+   line-height: 130%;
+   color: #575865;
+}
+a.Normal, a.Normal:hover, a.Normal:visited, a.Normal:active
+{
+   font-family: "arial";
+   font-size: 11px;
+   text-align: left; 
+   line-height: 130%;
+   color: #575865;
+}
+.NormalBold
+{
+   font-family: "arial";
+   font-size: 11px;
+   text-align: left; 
+   color: #575865;
+   margin:5px;
+   font-weight:bold;
+}
+
+a.NormalBold, a.NormalBold:hover, a.NormalBold:visited, a.NormalBold:active
+{
+   font-family: "arial";
+   font-size: 11px;
+   text-align: left; 
+   color: #575865;
+   margin:5px;
+   font-weight:bold;
+}
+
+.NormalReadOnly
+{
+   font-family: "arial";
+   font-size: 11px;
+   text-align: left; 
+   line-height: 130%;
+   color: #666666;
+}
+
+.paging
+{
+   font-family: "arial";
+   font-size: 11px;
+   text-align: left; 
+   color: #6095c1;
+   margin:5px;
+   font-weight:bold;
+}
+.linkmore, a.linkmore, a.linkmore:hover, a.linkmore:visited, a.linkmore:active
+{
+   font-family: "arial";
+   font-size: 11px;
+   text-align: left; 
+   color: #6095c1;
+   margin:5px;
+   font-weight:bold;
+}
+.NormalBold11pxB
+{
+   font-family: "arial";
+   font-size: 11px;
+   text-align: left; 
+   color: #575865;
+   margin:5px;
+}
+/* text style used for textboxes in the admin and edit pages, for Nav compatibility */
+.NormalTextBox
+{
+   font-family: "arial";
+   font-size: 11px;
+   text-align: left; 
+   color: #575865;
+}
+
+.NormalRed
+{
+   font-family: "arial";
+   font-size: 11px;
+   text-align: left; 
+   color: #575865;
+}
+
+.HeadingBold
+{
+    font-family:Arial,Verdana,Sans-Serif;
+    font-size: 17px;
+    color: #094891;
+    font-weight:bold;
+    padding: 15px 0pt 15px 0pt;
+}
+.SubHeading
+{
+    font-family: "arial";
+    font-size: 13px;
+    text-align: left; 
+    color: #094891;
+    padding: 15px 0pt 15px 0pt;
+}
+
+.SubHeading2
+{
+    font-family: "arial";
+    font-size: 13px;
+    text-align: left; 
+    color: #094891;
+    padding: 15px 0pt 15px 0pt;
+    font-weight:bold;
+}
+
+.SubHeadingBold
+{
+    font-family:Arial,Verdana,Sans-Serif;
+    font-size: 15px;
+    color: #094891;
+    font-weight:bold;
+    padding: 15px 0pt 15px 0pt;
+}
+.SubHeadingBoldGreen
+{
+    font-family:Arial,Verdana,Sans-Serif;
+    font-size: 15px;
+    color: #91C679;
+    font-weight:bold;
+    padding: 15px 0pt 15px 0pt;
+}
+.SubHeadingBoldWhite
+{
+   font-family: "arial";
+   font-size: 15px;
+   text-align: left; 
+   color: #FFFFFF;
+   font-weight:bold;
+}
+
+.SubHeadingBoldGrey
+{
+   font-family: "arial";
+   font-size: 13px;
+   text-align: left; 
+   color: #616163;
+   font-weight:bold;
+}
+
+.SubHeadingBoldGrey12
+{
+   font-family: "arial";
+   font-size: 12px;
+   text-align: left; 
+   color: #616163;
+   font-weight:bold;
+}
+
+.SubHeadingBoldLightBlue
+{
+   font-family: "arial";
+   font-size: 12px;
+   text-align: left; 
+   color: #6095C1;
+   font-weight:bold;
+}
+
+.SubHeadNews
+{
+   font-family: "arial";
+   font-size: 13px;
+   text-align: left; 
+   color: #6095C1;
+   font-weight:bold;
+}
+
+/* text style for buttons and link buttons used in the portal admin pages */
+/* hyperlink style for buttons and link buttons used in the portal admin pages */
+.CommandButton, A.CommandButton:link, A.CommandButton:visited, A.CommandButton:hover, A.CommandButton:active  
+{
+   font-family: "arial";
+   font-size: 11px;
+   text-align: left; 
+   line-height: 130%;
+   color: #575865;
+}
+
+/* button style for standard HTML buttons */
+.StandardButton     {
+}
+
+/* GENERIC */
+H1  {
+}
+
+H2  {
+}
+
+H3  {
+}
+
+H4  {
+}
+
+H5, DT  {
+}
+
+H6  {
+}
+
+TFOOT, THEAD    {
+}
+
+TH  {
+}
+
+A:link  {
+}
+
+A:visited   {
+}
+
+A:hover {
+}
+
+A:active    {
+}
+
+SMALL   {
+}
+
+BIG {
+}
+
+BLOCKQUOTE, PRE {
+}
+
+
+UL LI   {
+   list-style-image: url("/Portals/0/titles_text/li-image.gif");
+}
+
+UL LI LI    {
+list-style-image: url("/Portals/0/titles_text/li-image.gif");
+
+}
+
+UL LI LI LI {
+list-style-image: url("/Portals/0/titles_text/li-image.gif");
+
+}
+
+OL LI   {
+list-style-image: url("/Portals/0/titles_text/li-image.gif");
+
+}
+
+OL OL LI    {
+list-style-image: url("/Portals/0/titles_text/li-image.gif");
+
+}
+
+OL OL OL LI {
+list-style-image: url("/Portals/0/titles_text/li-image.gif");
+
+}
+OL UL LI   {
+list-style-image: url("/Portals/0/titles_text/li-image.gif");
+
+}
+
+HR {
+           color:  #9EA4B; 
+           background-color:  #9EA4B; 
+           border: 1px dotted  #9EA4B; 
+           border-style: none none dotted;
+}
+
+/* MODULE-SPECIFIC */
+/* text style for reading messages in Discussion */    
+.Message    {
+}   
+
+/* style of item titles by Announcements and events */
+.ItemTitle    {
+}
+
+/* Menu-Styles */
+/* Module Title Menu */
+.ModuleTitle_MenuContainer {
+}
+
+.ModuleTitle_MenuBar {
+}
+
+.ModuleTitle_MenuItem {
+}
+
+.ModuleTitle_MenuIcon {
+}
+
+.ModuleTitle_SubMenu {
+}
+
+.ModuleTitle_MenuBreak {
+}
+
+.ModuleTitle_MenuItemSel {
+}
+
+.ModuleTitle_MenuArrow {
+}
+
+.ModuleTitle_RootMenuArrow {
+}
+
+/* Main Menu */
+
+.MainMenu_MenuContainer {
+}
+
+.MainMenu_MenuBar {
+}
+
+.MainMenu_MenuItem {
+}
+
+.MainMenu_MenuIcon {
+}
+
+.MainMenu_SubMenu {
+}
+
+.MainMenu_MenuBreak {
+}
+
+.MainMenu_MenuItemSel {
+}
+
+.MainMenu_MenuArrow {
+}
+
+.MainMenu_RootMenuArrow {
+}
+
+/* Login Styles */
+.LoginPanel{
+}
+
+.LoginTabGroup{
+}
+
+.LoginTab {
+}
+
+.LoginTabSelected{
+}
+
+.LoginTabHover{
+}
+
+.LoginContainerGroup{
+}
+
+.LoginContainer{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ShowEditorOptions.Text">
+		<value>Mostrar opciones del editor personalizadas</value>
+	</data>
+	<data name="plToolbarSet.Text">
+		<value>Barras de herramientas</value>
+	</data>
+	<data name="plToolbarSet.Help">
+		<value>Establece el orden de verificación de roles. Los roles serán verificados usando este orden de arriba hacia abajo. Si ninguna barra cumple con los roles del usuario actual, se utilizará la última barra (la de más abajo)</value>
+	</data>
+	<data name="plToolbarSkin.Text">
+		<value>Tema de la barra</value>
+	</data>
+	<data name="plToolbarSkin.Help">
+		<value>Tema personalizado para la barra</value>
+	</data>
+	<data name="plImageBrowserTheme.Text">
+		<value>Tema de galería de imágenes</value>
+	</data>
+	<data name="plImageBrowserTheme.Help">
+		<value>Tema utilizado por la galería de imágenes</value>
+	</data>
+	<data name="plFlashBrowserTheme.Text">
+		<value>Tema de galería de flash</value>
+	</data>
+	<data name="plFlashBrowserTheme.Help">
+		<value>Tema utilizado por la galería de flash</value>
+	</data>
+	<data name="plToolbarRoles.Text">
+		<value>Roles que pueden ver la barra</value>
+	</data>
+	<data name="plToolbarRoles.Help">
+		<value>Seleccione los roles que pueden ver la barra de herramientas seleccionada</value>
+	</data>
+	<data name="plToolbarDisabled.Text">
+		<value>Deshabilitar barra</value>
+	</data>
+	<data name="plToolbarDisabled.Help">
+		<value>Seleccione para deshabilitar la barra seleccionada</value>
+	</data>
+	<data name="imgToolbarUp.Text">
+		<value>Mover barra arriba</value>
+	</data>
+	<data name="imgToolbarDn.Text">
+		<value>Mover barra abajo</value>
+	</data>
+	<data name="imgUpdateRoles.Text">
+		<value>Actualizar barra seleccionada (Modificar opciones de abajo primero)</value>
+	</data>
+	<data name="typeInstance.Text">
+		<value>Instancia</value>
+	</data>
+	<data name="typeModule.Text">
+		<value>Modulo</value>
+	</data>
+	<data name="typePortal.Text">
+		<value>Portal</value>
+	</data>
+	<data name="plSettingsType.Text">
+		<value>Tipo de configuración</value>
+	</data>
+	<data name="plSettingsType.Help">
+		<value>Seleccione el tipo de configuración a modificar</value>
+	</data>
+	<data name="plToolbarNotExpanded.Text">
+		<value>Barra no expandida</value>
+	</data>
+	<data name="plToolbarNotExpanded.Help">
+		<value>Select to make your toolbar not expanded when entering editor</value>
+	</data>
+	<data name="dshToolbarRoles.Text">
+		<value>Opciones de vista de la barra de herramientas del editor</value>
+	</data>
+	<data name="plApplyTo.Text">
+		<value>Aplicar valores a</value>
+	</data>
+	<data name="plApplyTo.Help">
+		<value>Seleccione donde aplicar los valores personalizados</value>
+	</data>
+	<data name="cmdUpdate.Text">
+		<value>Aplicar</value>
+	</data>
+	<data name="cmdClear.Text">
+		<value>Limpiar</value>
+	</data>
+	<data name="plLinkBrowserTheme.Text">
+		<value>Tema de la galería de enlaces</value>
+	</data>
+	<data name="plLinkBrowserTheme.Help">
+		<value>Tema personalizado para la galería de imágenes</value>
+	</data>
+	<data name="plEnhancedSecurity.Text">
+		<value>Seguridad incrementada</value>
+	</data>
+	<data name="plEnhancedSecurity.Help">
+		<value>Incluirá reglas básicas para tratar de minimizar el spam (Puede no permitir el ingreso de cierto contenido)</value>
+	</data>
+	<data name="confirmUpdate.Text">
+		<value>Aplicar valores personalizados?</value>
+	</data>
+	<data name="confirmClear.Text">
+		<value>Limpiar valores personalizados?</value>
+	</data>
+	<data name="dshThemes.Text">
+		<value>Temas del editor</value>
+	</data>
+	<data name="dshAvailableStyles.Text">
+		<value>Lista de estilos disponibles para el editor</value>
+	</data>
+	<data name="dshOther.Text">
+		<value>Otras opciones del editor</value>
+	</data>
+	<data name="plStyleMode.Text">
+		<value>Modo de generación de lista de estilos</value>
+	</data>
+	<data name="plStyleMode.Help">
+		<value>Determina como se genera la lista de estilos</value>
+	</data>
+	<data name="plStyleFilter.Text">
+		<value>Filtro de estilos dinamicos</value>
+	</data>
+	<data name="plStyleFilter.Help">
+		<value>Establece el filtro de estilos cuando se esta en modo dinámico</value>
+	</data>
+	<data name="plPortalStyle.Text">
+		<value>Archivo XML personalizado</value>
+	</data>
+	<data name="plPortalStyle.Help">
+		<value>Especifica el URL a un archivo xml conteniendo la lista de estilos</value>
+	</data>
+	<data name="plCssMode.Text">
+		<value>Modo de generación de CSS</value>
+	</data>
+	<data name="plCssMode.Help">
+		<value>Determina como se genera los archivos css</value>
+	</data>
+	<data name="dshEditorAreaCss.Text">
+		<value>CSS para el área del editor</value>
+	</data>
+	<data name="plPortalCss.Text">
+		<value>Archivo CSS personalizado</value>
+	</data>
+	<data name="plPortalCss.Help">
+		<value>Especifica un url a un archivo css personalizado</value>
+	</data>
+	<data name="plFullImagePath.Text">
+		<value>Ruta de imágen completa</value>
+	</data>
+	<data name="plFullImagePath.Help">
+		<value>Reemplaza las rutas de las imágenes con las turas completas (Incluyendo el servidor)</value>
+	</data>
+	<data name="toolbarTip.Text">
+		<value>Sugerencia: Coloque la barra más compleja primero y luego vaya bajando de complejidad en las de mas abajo</value>
+	</data>
+	<data name="plForceWidth.Text">
+		<value>Forzar Ancho (Opcional)</value>
+	</data>
+	<data name="plForceWidth.Help">
+		<value>Fuerza el ancho del editor a un tamaño especifico</value>
+	</data>
+	<data name="plForceHeight.Text">
+		<value>Forzar alto (Opcional)</value>
+	</data>
+	<data name="plForceHeight.Help">
+		<value>Fuerza la altura del editor a un tamaño especifico</value>
+	</data>
+	<data name="Toolbar.Header">
+		<value>Barra</value>
+	</data>
+	<data name="Disabled.Header">
+		<value>Deshabilitada</value>
+	</data>
+	<data name="ViewRoles.Header">
+		<value>Roles que pueden ver</value>
+	</data>
+	<data name="UpdateToolbar.Text">
+		<value>Actualizar barra</value>
+	</data>
+	<data name="CancelToolbar.Text">
+		<value>Cancelar</value>
+	</data>
+	<data name="EditToolbar.Text">
+		<value>Editar permisos para esta barra</value>
+	</data>
+	<data name="plImageFolder.Text">
+		<value>Ruta de imagenes (Opcional)</value>
+	</data>
+	<data name="plImageFolder.Help">
+		<value>Ruta personalizada a utilizarse como raíz de en las galerías de imágenes y flash. El usuario debe tener acceso de LECTURA a este folder</value>
+	</data>
+	<data name="RootFolder.Text">
+		<value>Raíz</value>
+	</data>
+	<data name="UseDefault.Text">
+		<value>&lt;Usar predeterminado&gt;</value>
+	</data>
+	<data name="NoneRoles.Text">
+		<value>Ninguno (Debe asignar roles)</value>
+	</data>
+	<data name="cmdMakeAllUsers.Text">
+		<value>Hacer que todas las barras esten disponibles para todos los usuarios (Necesario si no se quiere modificar roles)</value>
+	</data>
+	<data name="plFontColors.Text">
+		<value>Colores para letras</value>
+	</data>
+	<data name="plFontColors.Help">
+		<value>Lista separada por comas de valores exadecimales para los colores. Deje en blanco para usar la lista por defecto</value>
+	</data>
+	<data name="plFontNames.Text">
+		<value>Nombre de letras</value>
+	</data>
+	<data name="plFontNames.Help">
+		<value>Puede incluir su propia lista de nombre de letras separadas por un punto y coma. Recuerde que los tipos de letras deben residir en la computadora cliente. deje en blanco para usar la lista por defecto</value>
+	</data>
+	<data name="plFontFormats.Text">
+		<value>Formatos de letras</value>
+	</data>
+	<data name="plFontFormats.Help">
+		<value>Una lista de valores separados por punto y coma. cada valor debe contener el TAG de formato. Por ejemplo: p;div;pre;address;</value>
+	</data>
+	<data name="plFontSizes.Text">
+		<value>Tamaños de letras</value>
+	</data>
+	<data name="plFontSizes.Help">
+		<value>Una lista de valores separados por punto y coma. Cada valor debe contener dos partes separadas por una barra inclinada para indicar el tamaño y el nombre del tamaño. For example: 1/xx-small;2/x-small;3/small. Deje en blanco si desea usar la lista por defecto</value>
+	</data>
+	<data name="RefreshEditor.Text">
+		<value>Refrescar editor</value>
+	</data>
+	<data name="lblModuleType.Text">
+		<value>Tipo</value>
+	</data>
+	<data name="lblModuleName.Text">
+		<value>Modulo</value>
+	</data>
+	<data name="lblModuleInstance.Text">
+		<value>Instancia</value>
+	</data>
+	<data name="NoModuleDefinition.Text">
+		<value>Sin definición de modulo</value>
+	</data>
+	<data name="NoUser.Text">
+		<value>[SIN USUARIO]</value>
+	</data>
+	<data name="NoInstance.Text">
+		<value>No se encontro instancia</value>
+	</data>
+	<data name="UpdateSuccess.Text">
+		<value>Opciones actualizadas exitosamente para {0}</value>
+	</data>
+	<data name="CleanSuccess.Text">
+		<value>Opciones removidas exitosamente de {0}</value>
+	</data>
+	<data name="UpdateError.Text">
+		<value>Error aplicando opciones personalizadas del editor para {0}</value>
+	</data>
+	<data name="CleanError.Text">
+		<value>Error quitando opciones personalizadas para {0}</value>
+	</data>
+</root>

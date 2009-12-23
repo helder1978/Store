@@ -1,0 +1,9 @@
+<Object>
+    <Token>[MENU]</Token>
+        <Settings>
+            <Setting>
+                <Name>rootonly</Name>
+                <Value>true</Value>
+            </Setting>
+        </Settings>
+</Object>

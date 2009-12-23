@@ -1,0 +1,52 @@
+The IEcustom is obsolete because it caused a lot of problems. 
+That was an idea I had because I wanted it to open in a real modal dialog, 
+but IE had a lot of problems and the cache was one of them.
+
+The folder is now removed from the package as it could cause more problems.
+
+If you want to continue to use the showmodaldialog in IE, you can:
+(The changes explained here are at your own risk. )
+
+1) First you need to use the original .js file (fck_dialog_common.js)
+2) clear you browser cache as it saves the file for future uses
+3) open the original fck_dialog_common.js 
+   (it must be the one from the current version of the editor....
+	otherwise it will cause javascript errors)
+   you can find it at: 
+   Providers\HtmlEditorProviders\FckhtmlEditorProvider\FCKeditor\editor\dialog\common
+4) locate the function: function OpenFileBrowser( url, width, height )
+5) locate the code inside that function after the following comments:
+
+		// The following change has been made otherwise IE will open the file
+		// browser on a different server session (on some cases):
+		// http://support.microsoft.com/default.aspx?scid=kb;en-us;831678
+		// by Simone Chiaretta.
+
+6) and insert the following code after that:
+
+		if (oEditor.window.showModalDialog) {
+			sOptions = "status:no;resizable:yes" ;
+			sOptions += ";dialogWidth:" + width + 'px';
+			sOptions += ";dialogHeight:" + height + 'px' ;
+			sOptions += ";dialogLeft:" + iLeft + 'px' ;
+			sOptions += ";dialogTop:" + iTop + 'px' ;
+			var oRet = oEditor.window.showModalDialog(url,"FCKBrowseWindow",sOptions) ;
+			if (oRet) SetUrl( oRet );
+		}
+		else{
+
+7) The close the last bracket after the original code that opens the window (Note: it can be changed from version to version)
+
+		else
+			alert( oEditor.FCKLang.BrowseServerBlocked ) ;
+		}	//<<<<<------Add this one... the above is the original code to show you where
+
+8) That is all.
+
+Note that you will have to do this for every new version of the editor, and the original code could be different each time
+
+Hope it helps
+
+Notes:
+It could be better to try with the original file first and then make the changes. 
+Also remember to clear your browser cache each time a .js file is changed

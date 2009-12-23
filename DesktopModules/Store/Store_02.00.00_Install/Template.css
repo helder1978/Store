@@ -1,0 +1,24 @@
+/* 
+	Nom du projet 			:	Store for DotNetNuke
+	Date de realisation 	:	2007
+	URL 					:	www.dotnetnuke.com
+	
+	Realisateur 			:	Sebastien FICHOT
+	Contact 				:	abcd@hotmail.fr - www.takethewave.net
+	
+	Societe 			 	:	Aricie - www.aricie.net
+	
+	Derniere modification 	:	03/05/2007
+	
+*/
+/*****************/
+/* Nested Import */
+/*****************/
+@media screen {
+ @import url(./StyleSheet/Common.css);
+ @import url(./StyleSheet/SkinObjects.css);
+ @import url(./StyleSheet/MiniCart.css);
+ @import url(./StyleSheet/Cart.css);
+ @import url(./StyleSheet/StoreFront.css);
+}
+@import url(./StyleSheet/FontStyles.css); /* Font styles everytime */

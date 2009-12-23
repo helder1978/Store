@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BasicSettings.Text" xml:space="preserve">
+    <value>Basic Settings</value>
+  </data>
+  <data name="BasicSettingsDescription.Text" xml:space="preserve">
+    <value>In this section, you can set up the basic settings for your message.</value>
+  </data>
+  <data name="plRoles.Text" xml:space="preserve">
+    <value>User Role(s)</value>
+  </data>
+  <data name="plRoles.Help" xml:space="preserve">
+    <value>You can select the User Roles that are to receive this message.  eg All Administrators, or all Registered Users.</value>
+  </data>
+  <data name="plEmail.Text" xml:space="preserve">
+    <value>Email List</value>
+  </data>
+  <data name="plEmail.Help" xml:space="preserve">
+    <value>You can add Email addresses, separated by a ";".</value>
+  </data>
+  <data name="plFrom.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="plFrom.Help" xml:space="preserve">
+    <value>Enter the 'From' email address of the email message.</value>
+  </data>
+  <data name="revEmailAddress.ErrorMessage" xml:space="preserve">
+    <value>The email address is in an invalid format!</value>
+  </data>
+  <data name="plSubject.Text" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="plSubject.Help" xml:space="preserve">
+    <value>Enter the subject of this message.</value>
+  </data>
+  <data name="Message.Text" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MessageDescription.Text" xml:space="preserve">
+    <value>You can use the Editor below to write your message.</value>
+  </data>
+  <data name="AdvancedSettings.Text" xml:space="preserve">
+    <value>Advanced Settings</value>
+  </data>
+  <data name="AdvancedSettingsHelp.Text" xml:space="preserve">
+    <value>In this section, you can set up the advanced settings for your message.</value>
+  </data>
+  <data name="plAttachment.Text" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="plAttachment.Help" xml:space="preserve">
+    <value>Select an Attachment for this message.</value>
+  </data>
+  <data name="plPriority.Text" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="plPriority.Help" xml:space="preserve">
+    <value>Select the priority for this message.</value>
+  </data>
+  <data name="Normal.Text" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="High.Text" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="Low.Text" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="plReplaceTokens.Text" xml:space="preserve">
+    <value>Replace Tokens?</value>
+  </data>
+  <data name="plReplaceTokens.Help" xml:space="preserve">
+    <value>Does the text contain any tokens, that shall be replaced with current environment values?&lt;br&gt; Note: User tokens are replaced only, if send method is "TO"
+	</value>
+  </data>
+  <data name="SendTo.Text" xml:space="preserve">
+    <value>TO: One Message Per Email Address ( Personalized )</value>
+  </data>
+  <data name="plSendMethod.Text" xml:space="preserve">
+    <value>Send Method</value>
+  </data>
+  <data name="plSendMethod.Help" xml:space="preserve">
+    <value>Select the method for this email to be sent.</value>
+  </data>
+  <data name="SendBCC.Text" xml:space="preserve">
+    <value>BCC: One Email To Blind Distribution List ( Not Personalized )</value>
+  </data>
+  <data name="plSendAction.Text" xml:space="preserve">
+    <value>Send Action</value>
+  </data>
+  <data name="plSendAction.Help" xml:space="preserve">
+    <value>Select how you want the message to be sent.</value>
+  </data>
+  <data name="Synchronous.Text" xml:space="preserve">
+    <value>Synchronous</value>
+  </data>
+  <data name="Asynchronous.Text" xml:space="preserve">
+    <value>Asynchronous</value>
+  </data>
+  <data name="cmdSend.Text" xml:space="preserve">
+    <value>Send Email</value>
+  </data>
+  <data name="ControlTitle_.Text" xml:space="preserve">
+    <value>Newsletters</value>
+  </data>
+  <data name="MessageSent.Text" xml:space="preserve">
+    <value>Bulk mail sent (asynchronous mode). Please check confirmation email for result.</value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;h1&gt;About Newsletters&lt;/h1&gt;&lt;p&gt;Administrators can send bulk email to all users belonging to a particular Role.&lt;/p&gt;</value>
+  </data>
+  <data name="Heading.Text" xml:space="preserve">
+    <value>Dear </value>
+  </data>
+  <data name="MessageValidation.Text" xml:space="preserve">
+    <value>You must include a Subject and Message</value>
+  </data>
+  <data name="MessagesSentCount.Text" xml:space="preserve">
+    <value>{0} Messages were sent out successfully</value>
+  </data>
+  <data name="NoMessagesSent.Text" xml:space="preserve">
+    <value>No Messages were sent, maybe due to empty roles</value>
+  </data>
+  <data name="cmdPreview.Text" xml:space="preserve">
+    <value>Preview Email</value>
+  </data>
+</root>

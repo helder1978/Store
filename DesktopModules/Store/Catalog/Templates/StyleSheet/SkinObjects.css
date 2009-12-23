@@ -1,0 +1,22 @@
+/* =============*/
+/* SkinObjects */
+/* ============*/
+
+/* MicroCart SkinObject */
+DIV.StoreSkinObject-MicroCart-Entity { padding:10px;  } 
+	DIV.StoreSkinObject-MicroCart-Items {  padding-bottom:6px; } 
+		.StoreSkinObject-MicroCart-Items .NormalBold { font-weight:bold; } /* Label Your Cart */ /* TODO : this class won't work yet */
+		.StoreSkinObject-MicroCart-Items .Normal  { color:red; } /* Label displaying item count */
+	DIV.StoreSkinObject-MicroCart-Total { }
+		.StoreSkinObject-MicroCart-Total .NormalBold  { font-weight:bold; } /* Label Total */ /* TODO : this class won't work yet */
+		.StoreSkinObject-MicroCart-Total .Normal { color:red; } /* Label displaying item total */
+
+/* Links SkinObject */
+
+SPAN.StoreSkinObject-Links-Entity { padding:10px; } 
+	SPAN.StoreSkinObject-Links-Entity IMG { border:0; } /* The cart/shop image */
+ 	.StoreSkinObject-Links-Entity a.Normal:link, /* The link */
+	.StoreSkinObject-Links-Entity a.Normal:visited,
+	.StoreSkinObject-Links-Entity a.Normal:active,
+	.StoreSkinObject-Links-Entity a.Normal:hover { text-decoration:none; } 
+

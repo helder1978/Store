@@ -1,0 +1,5 @@
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\bin\DotNetNuke.Modules.Store.Cart.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\bin\DotNetNuke.Modules.Store.Cart.pdb
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\obj\Debug\DotNetNuke.Modules.Store.Cart.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\obj\Debug\DotNetNuke.Modules.Store.Cart.pdb

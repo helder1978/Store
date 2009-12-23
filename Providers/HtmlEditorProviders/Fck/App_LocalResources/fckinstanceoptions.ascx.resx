@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ShowEditorOptions.Text">
+		<value>Show custom editor options</value>
+	</data>
+	<data name="plToolbarSet.Text">
+		<value>Toolbars</value>
+	</data>
+	<data name="plToolbarSet.Help">
+		<value>Set the toolbar order preference. The role will be verified against this order from top to bottom. If none toolbar matches current user roles, the last toolbar will be used (Bottom one)</value>
+	</data>
+	<data name="plToolbarSkin.Text">
+		<value>Toolbar Skin</value>
+	</data>
+	<data name="plToolbarSkin.Help">
+		<value>Custom toolbar skin for this instance</value>
+	</data>
+	<data name="plImageBrowserTheme.Text">
+		<value>Image Browser Skin</value>
+	</data>
+	<data name="plImageBrowserTheme.Help">
+		<value>Theme used by file browser</value>
+	</data>
+	<data name="plFlashBrowserTheme.Text">
+		<value>Flash Browser Skin</value>
+	</data>
+	<data name="plFlashBrowserTheme.Help">
+		<value>Theme used by flash browser</value>
+	</data>
+	<data name="plToolbarRoles.Text">
+		<value>View roles for the selected toolbar</value>
+	</data>
+	<data name="plToolbarRoles.Help">
+		<value>Select all roles with view access to this toolbar</value>
+	</data>
+	<data name="plToolbarDisabled.Text">
+		<value>Disable selected toolbar</value>
+	</data>
+	<data name="plToolbarDisabled.Help">
+		<value>Select to disable selected toolbar. (If all toolbars are disabled, then last one will be used</value>
+	</data>
+	<data name="imgToolbarUp.Text">
+		<value>Move toolbar up</value>
+	</data>
+	<data name="imgToolbarDn.Text">
+		<value>Move toolbar down</value>
+	</data>
+	<data name="imgUpdateRoles.Text">
+		<value>Update selected toolbar (Modify options below first)</value>
+	</data>
+	<data name="typeInstance.Text">
+		<value>Instance</value>
+	</data>
+	<data name="typeModule.Text">
+		<value>Module</value>
+	</data>
+	<data name="typePortal.Text">
+		<value>Portal</value>
+	</data>
+	<data name="plSettingsType.Text">
+		<value>Settings Type</value>
+	</data>
+	<data name="plSettingsType.Help">
+		<value>Select the type of setting to modify</value>
+	</data>
+	<data name="plToolbarNotExpanded.Text">
+		<value>Toolbar not expanded</value>
+	</data>
+	<data name="plToolbarNotExpanded.Help">
+		<value>Select to make your toolbar not expanded when entering editor</value>
+	</data>
+	<data name="dshToolbarRoles.Text">
+		<value>Editor toolbar view options</value>
+	</data>
+	<data name="plApplyTo.Text">
+		<value>Apply custom settings to</value>
+	</data>
+	<data name="plApplyTo.Help">
+		<value>Select where to apply custom settings</value>
+	</data>
+	<data name="cmdUpdate.Text">
+		<value>Apply</value>
+	</data>
+	<data name="cmdClear.Text">
+		<value>Clear</value>
+	</data>
+	<data name="plLinkBrowserTheme.Text">
+		<value>Link Browser Skin</value>
+	</data>
+	<data name="plLinkBrowserTheme.Help">
+		<value>Theme used bu the link browser window</value>
+	</data>
+	<data name="plEnhancedSecurity.Text">
+		<value>Enhanced Security</value>
+	</data>
+	<data name="plEnhancedSecurity.Help">
+		<value>Will try to use added basic rules for anti-spam (can prevent including some content type)</value>
+	</data>
+	<data name="confirmUpdate.Text">
+		<value>Apply custom values?</value>
+	</data>
+	<data name="confirmClear.Text">
+		<value>Clear custom values?</value>
+	</data>
+	<data name="dshThemes.Text">
+		<value>Editor Skins</value>
+	</data>
+	<data name="dshAvailableStyles.Text">
+		<value>List of available styles for the editor</value>
+	</data>
+	<data name="dshOther.Text">
+		<value>Other editor options</value>
+	</data>
+	<data name="plStyleMode.Text">
+		<value>Style list generation mode</value>
+	</data>
+	<data name="plStyleMode.Help">
+		<value>Determines how the style list will be generated</value>
+	</data>
+	<data name="plStyleFilter.Text">
+		<value>Dynamic styles filter</value>
+	</data>
+	<data name="plStyleFilter.Help">
+		<value>When in dynamic mode, you can filter your styles</value>
+	</data>
+	<data name="plPortalStyle.Text">
+		<value>Custom XML file</value>
+	</data>
+	<data name="plPortalStyle.Help">
+		<value>Specifies a custom file to be used for you styles list</value>
+	</data>
+	<data name="plCssMode.Text">
+		<value>CSS Generator mode</value>
+	</data>
+	<data name="plCssMode.Help">
+		<value>Determines how the css file will be generated</value>
+	</data>
+	<data name="dshEditorAreaCss.Text">
+		<value>Editor area CSS</value>
+	</data>
+	<data name="plPortalCss.Text">
+		<value>Custom CSS file</value>
+	</data>
+	<data name="plPortalCss.Help">
+		<value>Specifies a custom css file to be used for your editor area</value>
+	</data>
+	<data name="plFullImagePath.Text">
+		<value>Full image path</value>
+	</data>
+	<data name="plFullImagePath.Help">
+		<value>Replaces image path with a complete path including the server</value>
+	</data>
+	<data name="toolbarTip.Text">
+		<value>Tip: Put most complex toolbar firs and then go down with others</value>
+	</data>
+	<data name="plForceWidth.Text">
+		<value>Force Width (Optional)</value>
+	</data>
+	<data name="plForceWidth.Help">
+		<value>Forces editor width to a specific size</value>
+	</data>
+	<data name="plForceHeight.Text">
+		<value>Force Height (Optional)</value>
+	</data>
+	<data name="plForceHeight.Help">
+		<value>Forces editor height to a specific size</value>
+	</data>
+	<data name="Toolbar.Header">
+		<value>Toolbar</value>
+	</data>
+	<data name="Disabled.Header">
+		<value>Disabled</value>
+	</data>
+	<data name="ViewRoles.Header">
+		<value>View Roles</value>
+	</data>
+	<data name="EditToolbar.Text">
+		<value>Edit current toolbar permissions</value>
+	</data>
+	<data name="UpdateToolbar.Text">
+		<value>Update Toolbar</value>
+	</data>
+	<data name="CancelToolbar.Text">
+		<value>Cancel</value>
+	</data>
+	<data name="plImageFolder.Text">
+		<value>Image folder (Optional)</value>
+	</data>
+	<data name="plImageFolder.Help">
+		<value>Custom image folder to be used as the root folder for image and flash galleries. Editors must have  READ access to this folder</value>
+	</data>
+	<data name="RootFolder.Text">
+		<value>Root</value>
+	</data>
+	<data name="UseDefault.Text">
+		<value>&lt;Use Default&gt;</value>
+	</data>
+	<data name="NoneRoles.Text">
+		<value>None (Must define roles)</value>
+	</data>
+	<data name="cmdMakeAllUsers.Text">
+		<value>Make all toolbars available for all users (Needed if you don't want to modify roles)</value>
+	</data>
+	<data name="plFontColors.Text">
+		<value>Font Colors</value>
+	</data>
+	<data name="plFontColors.Help">
+		<value>Comma separated list of hexadecimal values for colors. Leave it blank for default list</value>
+	</data>
+	<data name="plFontNames.Text">
+		<value>Font Names</value>
+	</data>
+	<data name="plFontNames.Help">
+		<value>You can include your own list of font names separated by a semicolon. remember that fonts must reside on the client computer. Leave it blank if you want to use the default list</value>
+	</data>
+	<data name="plFontFormats.Text">
+		<value>Font Formats</value>
+	</data>
+	<data name="plFontFormats.Help">
+		<value>A semicolon separated list of values. Each value must contain the format tag. For example: p;div;pre;address;</value>
+	</data>
+	<data name="plFontSizes.Text">
+		<value>Font Sizes</value>
+	</data>
+	<data name="plFontSizes.Help">
+		<value>A semicolon separated list of values. Each value must contain two parts separated by a slash. For example: 1/xx-small;2/x-small;3/small. Leave it blank if you want to use the default list</value>
+	</data>
+	<data name="RefreshEditor.Text">
+		<value>Refresh Editor</value>
+	</data>
+	<data name="lblModuleType.Text">
+		<value>Module type</value>
+	</data>
+	<data name="lblModuleName.Text">
+		<value>Module name</value>
+	</data>
+	<data name="lblModuleInstance.Text">
+		<value>Module instance</value>
+	</data>
+	<data name="NoModuleDefinition.Text">
+		<value>No module definition</value>
+	</data>
+	<data name="NoUser.Text">
+		<value>[NO USER]</value>
+	</data>
+	<data name="NoInstance.Text">
+		<value>No instance found</value>
+	</data>
+	<data name="UpdateSuccess.Text">
+		<value>Settings applied succesfully to {0}</value>
+	</data>
+	<data name="CleanSuccess.Text">
+		<value>Settings removed succesfully from {0}</value>
+	</data>
+	<data name="UpdateError.Text">
+		<value>Error applying custom editor settings for {0}</value>
+	</data>
+	<data name="CleanError.Text">
+		<value>Error removing custom editor settings for {0}</value>
+	</data>
+</root>

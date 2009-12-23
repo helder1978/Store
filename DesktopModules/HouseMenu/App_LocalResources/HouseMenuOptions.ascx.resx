@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ControlTitle_settings.Text">
+		<value>HouseMenu Settings</value>
+	</data>
+	<data name="plScope.Text">
+		<value>Scope</value>
+	</data>
+	<data name="plScope.Help">
+		<value>Specify which pages to display in menu.</value>
+	</data>
+	<data name="radTabsAll.Text">
+		<value>All Pages</value>
+	</data>
+	<data name="radTabsCurrent.Text">
+		<value>Current Page Children</value>
+	</data>
+	<data name="radTabsSelected.Text">
+		<value>Selected Page Children</value>
+	</data>
+	<data name="plShow.Text">
+		<value>Show</value>
+	</data>
+	<data name="plShow.Help">
+		<value>Specify whether to include certain pages or elements.</value>
+	</data>
+	<data name="chkShowHome.Text">
+		<value>Home</value>
+	</data>
+	<data name="chkShowHomeTip.Text">
+		<value>Show home page?</value>
+	</data>
+	<data name="chkShowHidden.Text">
+		<value>Hidden</value>
+	</data>
+	<data name="chkShowHiddenTip.Text">
+		<value>Show hidden pages?</value>
+	</data>
+	<data name="chkShowAdmin.Text">
+		<value>Admin/Host</value>
+	</data>
+	<data name="chkShowAdminTip.Text">
+		<value>Show Admin and Host pages?</value>
+	</data>
+	<data name="chkShowSearchResults.Text">
+		<value>Search Results</value>
+	</data>
+	<data name="chkShowSearchResultsTip.Text">
+		<value>Show Search Results page along with other hidden pages?</value>
+	</data>
+	<data name="txtSearchResultsName.Text">
+		<value>Search Results</value>
+	</data>
+	<data name="txtSearchResultsNameTip.Text">
+		<value>Exact name of Search Results page</value>
+	</data>
+	<data name="chkShowPageIcons.Text">
+		<value>Page Icons</value>
+	</data>
+	<data name="chkShowPageIconsTip.Text">
+		<value>Show page icons?</value>
+	</data>
+	<data name="chkHidePageNames.Text">
+		<value>Hide Page Names</value>
+	</data>
+	<data name="chkHidePageNamesTip.Text">
+		<value>Hide page names?</value>
+	</data>
+	<data name="plRecursive.Text">
+		<value>Include nested pages?</value>
+	</data>
+	<data name="plRecursive.Help">
+		<value>Specify whether to include all nested pages/submenus.</value>
+	</data>
+	<data name="chkIsRecursive.Text">
+		<value>Display all nested children pages?</value>
+	</data>
+	<data name="chkIsRecursiveTip.Text">
+		<value>Display all nested children pages?</value>
+	</data>
+	<data name="plOrientation.Text">
+		<value>Orientation</value>
+	</data>
+	<data name="plOrientation.Help">
+		<value>Specify whether menu is vertical or horizontal.</value>
+	</data>
+	<data name="radOrientationTip.Text">
+		<value>Specify whether menu is vertical or horizontal.</value>
+	</data>
+	<data name="radOrientationVertical.Text">
+		<value>Vertical</value>
+	</data>
+	<data name="radOrientationHorizontal.Text">
+		<value>Horizontal</value>
+	</data>
+	<data name="plMode.Text">
+		<value>Mode</value>
+	</data>
+	<data name="plMode.Help">
+		<value>Specify whether menu is static or dynamic (using pop-up submenus).</value>
+	</data>
+	<data name="radModeTip.Text">
+		<value>Specify whether menu is static or dynamic (using pop-up submenus).</value>
+	</data>
+	<data name="radModeStatic.Text">
+		<value>Static</value>
+	</data>
+	<data name="radModeDynamic.Text">
+		<value>Dynamic</value>
+	</data>
+	<data name="plCssElementId.Text">
+		<value>Container Element ID</value>
+	</data>
+	<data name="plCssElementId.Help">
+		<value>Specify alternate element ID for CSS to allow multiple menus with different styling.</value>
+	</data>
+	<data name="txtCssElementId.Text">
+		<value>(optional)</value>
+	</data>
+	<data name="txtCssElementIdTip.Text">
+		<value>Specify alternate element ID for CSS to allow multiple menus with different styling.</value>
+	</data>
+	<data name="reqTabsDropdown.Text">
+		<value>Valid page selection required.</value>
+	</data>
+	<data name="radTabsTip.Text">
+		<value>Specify which pages to display in menu.</value>
+	</data>
+	<data name="chkShowParent.Text">
+		<value>Parent</value>
+	</data>
+	<data name="chkShowParentTip.Text">
+		<value>Show parent page?</value>
+	</data>
+	<data name="plStyleName.Text">
+		<value>Style</value>
+	</data>
+	<data name="plStyleName.Help">
+		<value>Style (CSS file) to be applied to the menu.</value>
+	</data>
+	<data name="ddlStyleNamesSelect.Text">
+		<value>Select menu style...</value>
+	</data>
+	<data name="ddlStyleNamesFromSkin.Text">
+		<value>[Use Skin CSS]</value>
+	</data>
+	<data name="plDefaultStyles.Text">
+		<value>Default Styles...</value>
+	</data>
+	<data name="plDefaultStyles.Help">
+		<value>These are the default included styles for the various menu presentations. Use the dropdown menu to the left to select different styles.</value>
+	</data>
+</root>

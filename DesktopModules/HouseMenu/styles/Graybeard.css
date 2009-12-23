@@ -1,0 +1,251 @@
+/* ==========================
+    CSS STYLES FOR HouseMenu
+   ==========================
+*/
+
+/*********************************************************************
+ Standard structural CSS that typically should not need to be changed
+*********************************************************************/
+#houseMenuH { /* menu wrapper div */
+	padding: 0;
+	margin: 0;
+	border: 0;
+	white-space: nowrap;
+	position: relative;
+}
+
+#houseMenuH ul { /* all submenu lists */
+	padding: 0;
+	margin: 0;
+	border: 0;
+	list-style-type: none;
+	white-space: nowrap;
+	z-index: 99999;
+}
+
+#houseMenuH li { /* all list items */
+	position: relative;
+	display: inline;
+	float: left;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#houseMenuH li li { /* all items under the top level */
+	z-index: 11113;
+}
+
+#houseMenuH a { /* all links within the menu wrapper */
+	display: block;
+	margin: 0; 
+	border: 0;
+	padding: 0;
+}
+
+#houseMenuH li li a { /* all item links under the top level */
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#houseMenuH li a:hover {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#houseMenuH li li a:hover {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#houseMenuH li ul {
+	position: absolute;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	z-index: 11112;
+}
+
+#houseMenuH li ul ul { /* third-and-above-level lists */
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#houseMenuH li:hover ul ul, 
+#houseMenuH li:hover ul ul ul, 
+#houseMenuH li.sfhover ul ul, 
+#houseMenuH li.sfhover ul ul ul {
+	left: -9999px;
+}
+
+#houseMenuH li:hover ul, 
+#houseMenuH li li:hover ul, 
+#houseMenuH li li li:hover ul, 
+#houseMenuH li.sfhover ul, 
+#houseMenuH li li.sfhover ul, 
+#houseMenuH li li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+	z-index: 99999;
+}
+
+#houseMenuH iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	display: block;
+}
+
+.ArrowPointer
+{
+	cursor: default;
+}
+
+
+
+/*******************************************************
+ Presentation CSS that typically needs to be customized
+*******************************************************/
+#houseMenuH { /* menu wrapper div */
+	border: solid 1px #333;
+	width: 100%;
+	height: 22px;
+	_height: 20px;
+	background-color: #666;
+}
+
+#houseMenuH ul { /* all submenu lists */
+	line-height: 12px;
+	background-color: #666;
+}
+
+#houseMenuH li { /* all list items */
+	width: 144px;
+	height: 22px;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	width: auto;
+	_width: 1px;
+	height: 22px;
+	_height: 20px;
+	/* end hack */
+}
+
+#houseMenuH li li { /* all items under the top level */
+	width: 148px;
+	height: auto;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	width: 134px;
+	_width: 144px;
+	/* end hack */
+}
+
+#houseMenuH a { /* all links within the menu wrapper */
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 9px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	background-color: transparent;
+	padding: 5px;
+	width: auto;
+	height: auto;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	_width: 100%;
+	height: 12px;
+	_height: 20px;
+	/* end hack */
+}
+
+#houseMenuH li li a { /* all item links under the top level */
+	padding: 5px;
+	width: 148px;
+	height: 20px;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	width: 134px;
+	_width: 144px;
+	height: 12px;
+	_height: 20px;
+	/* end hack */
+}
+
+#houseMenuH li a:hover {
+	padding: 5px;
+	color: #333;
+	background-color: #999; 
+	height: auto;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	height: 12px;
+	_height: 20px;
+	/* end hack */
+}
+
+#houseMenuH li li a:hover {
+	color: #666;
+	background-color: #ccc; 
+	padding: 5px;
+	height: auto;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	height: 12px;
+	_height: 20px;
+	/* end hack */
+}
+
+#houseMenuH li li li a:hover {
+	color: #666;
+	background-color: #eee; 
+	padding: 5px;
+	height: auto;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	height: 12px;
+	_height: 20px;
+	/* end hack */
+}
+
+#houseMenuH li ul { /* second-level lists */
+	width: 144px; /* width of submenu, must be set so third-level list can get shifted over properly */
+	left: -9999px; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	border: solid 1px #333;
+	margin: -2px 0 0 0;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	margin: 0;
+	/* end hack */
+	line-height: 12px;
+	background-color: #999;
+}
+
+#houseMenuH li ul ul { /* third-and-above-level lists */
+	margin: -22px 0 0 144px;
+	border: solid 1px #666;
+	line-height: 12px;
+	background-color: #ccc;
+}
+
+/* Applied to the parent item, if displayed, in either vertical or horizontal
+   orientation. Must follow other styles. */
+#houseMenuH #houseMenuParentItem a
+{ /* all links under the parent item (li) */
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+#houseMenuH a#houseMenuParentLink
+{ /* parent link itself */
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+#houseMenuH a#houseMenuCurrentLink
+{ /* current link itself */
+	padding: 5px;
+	color: #333; 
+	background-color: #eee; 
+	text-decoration: none;
+}
+

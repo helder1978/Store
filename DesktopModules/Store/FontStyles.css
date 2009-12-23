@@ -1,0 +1,148 @@
+/* Store Fonts styles */
+/* ==================== */
+/* Note : For SkinObjects, look at SkinObjects.css */
+
+/* General fonts styles */
+.CatalogWrapper SPAN,
+.CatalogWrapper DIV,
+.CatalogWrapper TABLE,
+.CatalogWrapper TR,
+.CatalogWrapper TD,
+.CatalogWrapper P { font: 14px Cambria, Verdana, Arial, Helvetica, sans-serif; line-height:15px; } /* Cambria is Microsoft ClearType font */
+
+/* General hyperlinks styles */
+.CatalogWrapper A:link,
+.CatalogWrapper A:visited,
+.CatalogWrapper A:active { }
+.CatalogWrapper A:hover { }
+
+
+
+/* ======================================================== */
+/* This classes overides the defaults styles from the 
+	skin.css and general font styles for Store 		    */
+/* ======================================================== */
+
+/* Module Store StoreFront */
+/* ========================= */
+/* New Products */
+.NewProduct-Entity SPAN, .NewProduct-Entity P, .NewProduct-Entity TABLE, .NewProduct-Entity TD, {
+font-size:12px;
+color:#686a6f;
+}
+.NewProduct-Entity A.normalbold:link,
+.NewProduct-Entity A.normalbold:visited { color:#0d69b2; text-decoration:none; }
+.NewProduct-Entity A.normalbold:hover { color:#0d69b2; text-decoration:underline; }
+.NewProduct-Price SPAN { color:red; font-size:12px; font-weight:400; }
+.NewProduct-AddToCart A:link,
+.NewProduct-AddToCart A:visited,
+.NewProduct-AddToCart A:active { font-size:12px; color:#0d69b2; }
+.NewProduct-Title SPAN { color:#0d69b2; }
+.NewProduct-Title A.normalbold:link,
+.NewProduct-Title A.normalbold:visited { color:#0d69b2; text-decoration:none; }
+.NewProduct-Title A.normalbold:hover { color:#0d69b2; text-decoration:underline; }
+/* Featured Products */
+.FeaturedProduct-Entity SPAN, .FeaturedProduct-Entity P, .FeaturedProduct-Entity TABLE, .FeaturedProduct-Entity TD, {
+font-size:12px;
+color:#686a6f;
+}
+.FeaturedProduct-Entity A.normalbold:link,
+.FeaturedProduct-Entity A.normalbold:visited { color:#0d69b2; text-decoration:none; }
+.FeaturedProduct-Entity A.normalbold:hover { color:#0d69b2; text-decoration:underline; }
+.FeaturedProduct-Price SPAN { color:red; font-size:18px; font-weight:700; }
+.FeaturedProduct-AddToCart A:link A:visited A:active { font-size:18px; }
+.FeaturedProduct-Title SPAN { color:#0d69b2; }
+.FeaturedProduct-Title A.normalbold:link,
+.FeaturedProduct-Title A.normalbold:visited { color:#0d69b2; text-decoration:none; }
+.FeaturedProduct-Title A.normalbold:hover { color:#0d69b2; text-decoration:underline; }
+/* Popular Products */
+.PopularProduct-Entity SPAN, .PopularProduct-Entity P, .PopularProduct-Entity TABLE, .PopularProduct-Entity TD, {
+font-size:12px;
+color:#686a6f;
+}
+.PopularProduct-Entity A.normalbold:link,
+.PopularProduct-Entity A.normalbold:visited { color:#0d69b2; text-decoration:none; }
+.PopularProduct-Entity A.normalbold:hover { color:#0d69b2; text-decoration:underline; }
+.PopularProduct-Price SPAN { color:red; font-size:12px; font-weight:400; }
+.PopularProduct-LinkDetail { }
+.PopularProduct-Title { color:#0d69b2; }
+.PopularProduct-Title SPAN { color:#0d69b2; }
+.PopularProduct-Title A.normalbold:link,
+.PopularProduct-Title A.normalbold:visited { color:#0d69b2; text-decoration:none; }
+.PopularProduct-Title A.normalbold:hover { color:#0d69b2; text-decoration:underline; }
+/* Product Details */
+.ProductDetail-Entity SPAN, .ProductDetail-Entity P, .ProductDetail-Entity TABLE, .ProductDetail-Entity TD, {
+font-size:12px;
+color:#686a6f;
+}
+.ProductDetail-Entity A.normalbold:link,
+.ProductDetail-Entity A.normalbold:visited { color:#0d69b2; text-decoration:none; }
+.ProductDetail-Entity A.normalbold:hover { color:#0d69b2; text-decoration:underline; }
+.ProductDetail-Entity TABLE P TD TR SPAN { font-size:12px; color:#686a6f; }
+.ProductDetail-Price SPAN { color:#a91a0c; font-size:18px; font-weight:700; }
+.ProductDetail-VATPrice SPAN { color:#a91a0c; font-size:12px; font-weight:400; }
+.ProductDetail-AddToCart A:link A:visited A:active { font-size:18px; }
+.ProductDetail-Title SPAN { color:#47505a; font-size:18px; }
+.ProductDetail-Title A.normalbold:link,
+.ProductDetail-Title A.normalbold:visited { color:#47505a; text-decoration:none; }
+.ProductDetail-Title A.normalbold:hover { color:#47505a; text-decoration:underline; }
+/* Module Store Account */
+/* Cart */
+/* ==== */
+.CartMasterTABLE .Normal { color:#0d69b2; font-weight:400; }
+.CartMasterTABLE .NormalBold { color:#686a6f; font-weight:700; }
+.CartMasterTABLE A:link,
+.CartMasterTABLE A:visited,
+.CartMasterTABLE A:active,
+.CartMasterTABLE A:hover { color:#0d69b2; text-decoration:none; }
+.Store-Cart-BtnViewCartMasterTD A.Normal:link,
+.Store-Cart-BtnViewCartMasterTD A.Normal:visited,
+.Store-Cart-BtnViewCartMasterTD A.Normal:active,
+.Store-Cart-BtnViewCartMasterTD A.Normal:hover { color:white; text-decoration:none; }
+.Store-Cart-BtnTD A.Normal:link,
+.Store-Cart-BtnTD A.Normal:visited,
+.Store-Cart-BtnTD A.Normal:active,
+.Store-Cart-BtnTD A.Normal:hover { color:#0d69b2; text-decoration:none; }
+/* ======= */
+.Store-Account-BtnTD,
+.Store-Account-BtnTD A:link,
+.Store-Account-BtnTD A:active,
+.Store-Account-BtnTD A:visited { color:#0d69b2; text-decoration:none; }
+.Store-Account-BtnTD A:hover { color:#0d69b2; text-decoration:underline; }
+.Store-Account-BtnTD { padding:0 15px 0 0; text-align:right; float:right; margin-top:-20px; }
+/* Module Store Minicart */
+/* MiniCart */
+/* ======== */
+.MiniCartMasterTABLE .Normal { color:#0d69b2; font-weight:400; }
+.MiniCartMasterTABLE .NormalBold { color:#686a6f; font-weight:700; }
+.MiniCartMasterTABLE A:link,
+.MiniCartMasterTABLE A:visited,
+.MiniCartMasterTABLE A:active,
+.MiniCartMasterTABLE A:hover { color:#0d69b2; text-decoration:none; }
+.Store-MiniCart-BtnViewCartMasterTD A.Normal:link,
+.Store-MiniCart-BtnViewCartMasterTD A.Normal:visited,
+.Store-MiniCart-BtnViewCartMasterTD A.Normal:active,
+.Store-MiniCart-BtnViewCartMasterTD A.Normal:hover { color:#0d69b2; text-decoration:none; }
+/* Module Store Menu */
+/* Categories */
+/* ========== */
+.Store-CategoryMenu-Entity { font-size:12px; }
+.Store-CategoryMenu-ItemSelected A:link,
+.Store-CategoryMenu-ItemSelected A:active,
+.Store-CategoryMenu-ItemSelected A:visited,
+.Store-CategoryMenu-ItemSelected { color:#0d69b2; text-decoration:none; }
+.Store-CategoryMenu-ItemSelected A.:hover {
+text-decoration:underline;
+}
+.Store-CategoryMenu-Item A.:link, .Store-CategoryMenu-Item A.:active, .Store-CategoryMenu-Item A.:visited, .Store-CategoryMenu-Item {
+color:#0d69b2;
+text-decoration:none;
+}
+.Store-CategoryMenu-Item A.:hover {
+text-decoration:underline;
+}
+/* Module Store Other controls */
+/* ============================= */
+.Store-DataGrid { color:#686a6f; }
+.Store-CommandDetails .Normal { color:#686a6f; }
+.Store-CommandDetails .NormalBold { color:#686a6f; }

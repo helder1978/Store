@@ -1,0 +1,5 @@
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\Providers\GatewayProviders\PayPalProvider\bin\DotNetNuke.Modules.Store.Cart.PayPalProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\Providers\GatewayProviders\PayPalProvider\bin\DotNetNuke.Modules.Store.Cart.PayPalProvider.pdb
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\Providers\GatewayProviders\PayPalProvider\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\Providers\GatewayProviders\PayPalProvider\obj\Debug\DotNetNuke.Modules.Store.Cart.PayPalProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\Providers\GatewayProviders\PayPalProvider\obj\Debug\DotNetNuke.Modules.Store.Cart.PayPalProvider.pdb

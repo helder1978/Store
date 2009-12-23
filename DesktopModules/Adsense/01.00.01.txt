@@ -1,0 +1,6 @@
+admin\Vendors\Adsense.ascx
+admin\Vendors\Adsense.ascx.vb
+admin\Vendors\EditAdsense.ascx
+admin\Vendors\EditAdsense.ascx.vb
+admin\Vendors\App_LocalResources\Adsense.ascx.resx
+admin\Vendors\App_LocalResources\EditAdsense.ascx.resx

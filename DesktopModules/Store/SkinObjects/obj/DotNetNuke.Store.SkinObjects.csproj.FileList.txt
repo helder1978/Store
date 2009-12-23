@@ -1,0 +1,7 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\DotNetNuke.Modules.Store.SkinObjects.dll
+obj\Debug\DotNetNuke.Modules.Store.SkinObjects.dll
+obj\Debug\DotNetNuke.Modules.Store.SkinObjects.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\DotNetNuke.Modules.Store.SkinObjects.dll
+bin\DotNetNuke.Modules.Store.SkinObjects.pdb

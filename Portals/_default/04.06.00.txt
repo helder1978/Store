@@ -1,0 +1,24 @@
+' Remove uninstalled module packages that have new versions in distribution.
+' Remove files which are no longer required in version 4.6.0
+bin\DotNetNuke.HttpModules.DNNMembership.xml
+bin\DotNetNuke.HttpModules.DNNMembership.dll
+bin\DotNetNuke.HttpModules.Exception.xml
+bin\DotNetNuke.HttpModules.Exception.dll
+bin\DotNetNuke.HttpModules.Personalization.xml
+bin\DotNetNuke.HttpModules.Personalization.dll
+bin\DotNetNuke.HttpModules.UsersOnline.xml
+bin\DotNetNuke.HttpModules.UsersOnline.dll
+bin\DotNetNuke.HttpModules.Compression.xml
+bin\DotNetNuke.HttpModules.Compression.dll
+bin\DotNetNuke.HttpModules.Authentication.xml
+bin\DotNetNuke.HttpModules.Authentication.dll
+bin\DotNetNuke.Caching.BroadcastPollingCachingProvider.SQLDataProvider.dll
+bin\DotNetNuke.Caching.BroadcastPollingCachingProvider.SQLDataProvider.xml
+bin\DotNetNuke.DNNScheduler.SqlDataProvider.dll
+bin\DotNetNuke.DNNScheduler.SqlDataProvider.xml
+bin\DotNetNuke.Provider.DBLoggingProvider.SqlDataProvider.dll
+bin\DotNetNuke.Provider.DBLoggingProvider.SqlDataProvider.xml
+bin\DotNetNuke.Provider.Membership.SqlDataProvider.dll
+bin\DotNetNuke.Provider.Membership.SqlDataProvider.xml
+bin\DotNetNuke.HttpModules.UrlRewrite.dll
+bin\DotNetNuke.HttpModules.UrlRewrite.xml

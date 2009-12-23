@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="plAdClient.Text">
+    <value>Adsense ID</value>
+  </data>
+  <data name="plAdClient.Help">
+    <value>Enter your Google Adsense ID</value>
+  </data>
+  <data name="cmdAdClient.Text">
+    <value>Click Here To Get Your Google Adsense ID</value>
+  </data>
+  <data name="cmdAdClient.URL">
+    <value>http://www.dotnetnukecorp.com/tabid/79/default.aspx</value>
+  </data>
+  <data name="AdClient.Message">
+    <value>You must click Update to save your Adsense ID. You must also check your email for a message from Google Adsense, asking you to verify your account information and submit your application for approval. Once your Adsense ID is saved and your account is approved, you can enable contextual advertising on your site by adding the Google Adsense Module to any Page. Please note that Public Service Ads may be displayed initially while Google indexes your site for content.</value>
+  </data>
+  <data name="valAdClient.Message">
+    <value>You must enter your Google Adsense ID.</value>
+  </data>
+  <data name="plFormat.Text">
+    <value>Format</value>
+  </data>
+  <data name="plFormat.Help">
+    <value>Select your Google Adsense format</value>
+  </data>
+  <data name="plChannel.Text">
+    <value>Channel ID</value>
+  </data>
+  <data name="plChannel.Help">
+    <value>Optionally enter your Channel ID from Google ( Channels must first be set up on the Google website )</value>
+  </data>
+  <data name="lblOr.Text">
+    <value>  or #  </value>
+  </data>
+  <data name="plBorder.Text">
+    <value>Border Color</value>
+  </data>
+  <data name="plBorder.Help">
+    <value>Optionally select a color for the Border or enter a Color Hex code</value>
+  </data>
+  <data name="plTitle.Text">
+    <value>Title Color</value>
+  </data>
+  <data name="plTitle.Help">
+    <value>Optionally select a color for the Title or enter a Color Hex code</value>
+  </data>
+  <data name="plBackground.Text">
+    <value>Background Color</value>
+  </data>
+  <data name="plBackground.Help">
+    <value>Optionally select a color for the Background or enter a Color Hex code</value>
+  </data>
+  <data name="plText.Text">
+    <value>Text Color</value>
+  </data>
+  <data name="plText.Help">
+    <value>Optionally select a color for the Text or enter a Color Hex code</value>
+  </data>
+  <data name="plURL.Text">
+    <value>URL Color</value>
+  </data>
+  <data name="plURL.Help">
+    <value>Optionally select a color for the URL or enter a Color Hex code</value>
+  </data>
+  <data name="Green.Text">
+    <value>Green</value>
+  </data>
+  <data name="Lime.Text">
+    <value>Lime</value>
+  </data>
+  <data name="Aqua.Text">
+    <value>Aqua</value>
+  </data>
+  <data name="Navy.Text">
+    <value>Navy</value>
+  </data>
+  <data name="Blue.Text">
+    <value>Blue</value>
+  </data>
+  <data name="Purple.Text">
+    <value>Purple</value>
+  </data>
+  <data name="Pink.Text">
+    <value>Pink</value>
+  </data>
+  <data name="Red.Text">
+    <value>Red</value>
+  </data>
+  <data name="Orange.Text">
+    <value>Orange</value>
+  </data>
+  <data name="Yellow.Text">
+    <value>Yellow</value>
+  </data>
+  <data name="White.Text">
+    <value>White</value>
+  </data>
+  <data name="Silver.Text">
+    <value>Silver</value>
+  </data>
+  <data name="Gray.Text">
+    <value>Gray</value>
+  </data>
+  <data name="Black.Text">
+    <value>Black</value>
+  </data>
+  <data name="Script.Text">
+    <value>&lt;script type="text/javascript"&gt;&lt;!--
+google_ad_client = "[ADCLIENT]";[HOST]
+google_ad_width = [WIDTH];
+google_ad_height = [HEIGHT];
+google_ad_format = "[FORMAT]";
+google_ad_type = "text";
+google_ad_channel = "[CHANNEL]";
+google_color_border = "[BORDER]";
+google_color_bg = "[BACKGROUND]";
+google_color_link = "[TITLE]";
+google_color_text = "[TEXT]";
+google_color_url = "[URL]";
+//--&gt;&lt;/script&gt;
+&lt;script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js"&gt;
+&lt;/script&gt;</value>
+  </data>
+  <data name="AdHost.Text">
+    <value>pub-9770992166002654</value>
+  </data>
+</root>

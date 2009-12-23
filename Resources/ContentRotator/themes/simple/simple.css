@@ -1,0 +1,12 @@
+.ContentRotator-Simple-Loader
+{
+    background-image: url(loading.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100px;
+}
+
+.ContentRotator-Simple-Container
+{
+    border: solid 1px #ededed;
+}

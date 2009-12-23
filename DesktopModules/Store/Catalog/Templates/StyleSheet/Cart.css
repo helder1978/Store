@@ -1,0 +1,32 @@
+/* Cart */
+/* ==== */
+DIV.Store-Cart-Entity { text-align:center; padding:5px; width:100%; }
+.CartMasterTABLE { width:100%; text-align:center; border:0; padding-bottom:20px; }
+.CartMasterTABLE TD,
+.CartMasterTABLE SPAN { text-align:center; border:0; padding:5px; }
+.CartMasterTABLE .Normal { }
+.CartMasterTABLE .NormalBold { }
+.CartMasterTABLE A:link,
+.CartMasterTABLE A:visited,
+.CartMasterTABLE A:active,
+.CartMasterTABLE A:hover { }
+.Store-Cart-BtnViewCartMasterTD { text-align:center; vertical-align:middle; height:15px; }
+.Store-Cart-BtnViewCartMasterTD .Normal { } /* Button Checkout */
+.Store-Cart-BtnViewCartMasterTD A.Normal:link,
+.Store-Cart-BtnViewCartMasterTD A.Normal:visited,
+.Store-Cart-BtnViewCartMasterTD A.Normal:active,
+.Store-Cart-BtnViewCartMasterTD A.Normal:hover { padding:0; }
+.Store-Cart-BtnViewCart TD { padding:0; }
+.Store-Cart-BtnTD .Normal { } /* Button Checkout */
+.Store-Cart-BtnTD A.Normal:link,
+.Store-Cart-BtnTD A.Normal:visited,
+.Store-Cart-BtnTD A.Normal:active,
+.Store-Cart-BtnTD A.Normal:hover { }
+
+/* Style of the Cart button. Use this CSS styles for skinning an adaptive button */
+.Store-Boutton-left { width:8px; height:24px; border:0; BACKGROUND-IMAGE: url(../images/gel_left.gif); }
+.Store-Boutton-right { width:8px; height:24px; border:0; BACKGROUND-IMAGE: url(../images/gel_right.gif); }
+.Store-Boutton-spacer { width:15px; height:24px; BACKGROUND-IMAGE: url(../images/gel_background.gif); BACKGROUND-REPEAT: repeat-x; padding:0; }
+.Store-Boutton-back { height:24px; BACKGROUND-IMAGE: url(../images/gel_background.gif); BACKGROUND-REPEAT: repeat-x; padding:0; vertical-align:middle; }
+.Store-Boutton-spacer_gray { width:15px; height:24px; BACKGROUND-IMAGE: url(../images/gel_background_gray.gif); BACKGROUND-REPEAT: repeat-x; padding:0; }
+.Store-Boutton-back_gray { height:24px; BACKGROUND-IMAGE: url(../images/gel_background_gray.gif); BACKGROUND-REPEAT: repeat-x; padding:0; vertical-align:middle; }

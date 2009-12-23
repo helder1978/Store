@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="plFriendlyName.Text" xml:space="preserve">
+    <value>Friendly Name:</value>
+  </data>
+  <data name="valModuleName.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt;You must enter a Name for the Module</value>
+  </data>
+  <data name="plDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="plDescription.Help" xml:space="preserve">
+    <value>Provide a description of the module.</value>
+  </data>
+  <data name="plSupportedFeatures.Text" xml:space="preserve">
+    <value>Supported Features</value>
+  </data>
+  <data name="plSupportedFeatures.Help" xml:space="preserve">
+    <value>These options are updated automatically depending on the module and the features that the developer has chosen to support.</value>
+  </data>
+  <data name="plUpgradeable.Text" xml:space="preserve">
+    <value>Upgradeable</value>
+  </data>
+  <data name="plUpgradeable.Help" xml:space="preserve">
+    <value>If checked, this module executes logic on upgrading through the IUpgradeable module interface.</value>
+  </data>
+  <data name="plPortable.Text" xml:space="preserve">
+    <value>Portable</value>
+  </data>
+  <data name="plPortable.Help" xml:space="preserve">
+    <value>If checked, this module supports importing and exporting of content through the IPortable module interface.</value>
+  </data>
+  <data name="plSearchable.Text" xml:space="preserve">
+    <value>Searchable</value>
+  </data>
+  <data name="plSearchable.Help" xml:space="preserve">
+    <value>If checked, this module supports indexing and searching of content through the ISearchable module interface.</value>
+  </data>
+  <data name="plPremium.Text" xml:space="preserve">
+    <value>Premium?</value>
+  </data>
+  <data name="plPremium.Help" xml:space="preserve">
+    <value>Premium modules are only available to specific portals</value>
+  </data>
+  <data name="plVersion.Text" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="plVersion.Help" xml:space="preserve">
+    <value>Enter the version number for this module in the form ##.##.##</value>
+  </data>
+  <data name="plDefinitions.Text" xml:space="preserve">
+    <value>Definitions:</value>
+  </data>
+  <data name="plDefinitions.Help" xml:space="preserve">
+    <value>You can select a Module Definition and optionally delete it using the "Delete Definition" link.</value>
+  </data>
+  <data name="cmdDeleteDefinition.Text" xml:space="preserve">
+    <value>Delete Definition</value>
+  </data>
+  <data name="plDefinition.Text" xml:space="preserve">
+    <value>New Definition:</value>
+  </data>
+  <data name="plDefinition.Help" xml:space="preserve">
+    <value>You can ceate a new Definition by entereing the name here and clicking the "Add Definition" link</value>
+  </data>
+  <data name="cmdAddDefinition.Text" xml:space="preserve">
+    <value>Add Definition</value>
+  </data>
+  <data name="Control.Header" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="Title.Header" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Source.Header" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="cmdAddControl.Text" xml:space="preserve">
+    <value>Add Control</value>
+  </data>
+  <data name="plFriendlyName.Help" xml:space="preserve">
+    <value>This is the Friendly Name of the Module</value>
+  </data>
+  <data name="ControlTitle_edit.Text" xml:space="preserve">
+    <value>Edit Module Definitions</value>
+  </data>
+  <data name="PrivateAssemblyCreate.Action" xml:space="preserve">
+    <value>Create Module Package</value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;h1&gt;About Module Definitions&lt;/h1&gt;&lt;p&gt;The Super User can manage the Desktop Modules installed on the system.&lt;/p&gt;</value>
+  </data>
+  <data name="plFolderName.Text" xml:space="preserve">
+    <value>Folder Name:</value>
+  </data>
+  <data name="plFolderName.Help" xml:space="preserve">
+    <value>Enter a Folder Name for the location of the Module's files.</value>
+  </data>
+  <data name="valFolderName.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt;You must enter a Folder Name for the location of the Module's files.</value>
+  </data>
+  <data name="plBusinessClass.Text" xml:space="preserve">
+    <value>Controller Class:</value>
+  </data>
+  <data name="plBusinessClass.Help" xml:space="preserve">
+    <value>This is the Controller Class for the module.  If the module supports optional Interfaces, such as ISearchable and IPortable, this is the class where these interfaces are implemented.</value>
+  </data>
+  <data name="plModuleName.Text" xml:space="preserve">
+    <value>Module Name:</value>
+  </data>
+  <data name="plModuleName.Help" xml:space="preserve">
+    <value>This is the name of the module - it will uniquely identify the module in the system.</value>
+  </data>
+  <data name="plCacheTime.Text" xml:space="preserve">
+    <value>Default Cache Time:</value>
+  </data>
+  <data name="plCacheTime.Help" xml:space="preserve">
+    <value>This is the default Cache Time to be used for this Module Definition. A default cache time of "-1" indicates that the module does not support output caching.</value>
+  </data>
+  <data name="cmdUpdateCacheTime.Text" xml:space="preserve">
+    <value>Update Cache Properties</value>
+  </data>
+  <data name="AddModule.ErrorMessage" xml:space="preserve">
+    <value>There is already a Module with this name. You cannot create a new Module with the same name.</value>
+  </data>
+  <data name="AddDefinition.ErrorMessage" xml:space="preserve">
+    <value>There is already a Module Definition with this name. You cannot create a new Module Definition using the same name.</value>
+  </data>
+  <data name="MissingDefinition.ErrorMessage" xml:space="preserve">
+    <value>You need to provide a Name for the new Definition.</value>
+  </data>
+  <data name="UpdateCache.ErrorMessage" xml:space="preserve">
+    <value>The CacheTime must be an Integer value.</value>
+  </data>
+  <data name="plCompatibleVersions.Text" xml:space="preserve">
+    <value>Compatibility:</value>
+  </data>
+  <data name="plCompatibleVersions.Help" xml:space="preserve">
+    <value>(Optional) A regular expression which describes the module compatibility with the host application based on version. A sample regular expression would be ^[0-9]{1}[0-9]{1}.[0-9]{1}[0-9]{1}.[0-9]{1}[0-9]{1}$ - indicating the module is compatible with all versions from 00.00.00 to 99.99.99</value>
+  </data>
+  <data name="plDependencies.Text" xml:space="preserve">
+    <value>Dependencies:</value>
+  </data>
+  <data name="plDependencies.Help" xml:space="preserve">
+    <value>(Optional) A semi-colon delimited list of TypeNames which the module is dependent upon ( ie. System.Web.UI.ScriptManager; etc... )</value>
+  </data>
+  <data name="plPermissions.Text" xml:space="preserve">
+    <value>Permissions:</value>
+  </data>
+  <data name="plPermissions.Help" xml:space="preserve">
+    <value>(Optional) A semi-colon delimited list of Permissions which the module requires ( ie. ReflectionPermission; WebPermission; etc... )</value>
+  </data>
+  <data name="cmdDelete.Text" xml:space="preserve">
+    <value>Uninstall</value>
+  </data>
+  <data name="chkDelete.Text" xml:space="preserve">
+    <value>Delete Files?</value>
+  </data>
+  <data name="valFriendlyName.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt;A Module must have a Friendly Name</value>
+  </data>
+  <data name="valVersion.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt;A Module must have a Version number in the form of ##.##.##</value>
+  </data>
+  <data name="cmdAdd.Text" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Create.Text" xml:space="preserve">
+    <value>Create Module Definition</value>
+  </data>
+  <data name="Edit.Text" xml:space="preserve">
+    <value>Edit Module Definition</value>
+  </data>
+</root>

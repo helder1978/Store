@@ -1,0 +1,21 @@
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Change the procedure to allow for ModuleID to be passed in. **/
+ALTER procedure {databaseOwner}{objectQualifier}DeleteLink
+
+	@ItemId int,
+	@ModuleId int
+
+as
+
+delete
+from dnn_Links
+where  ItemID = @ItemId AND ModuleID = @ModuleId

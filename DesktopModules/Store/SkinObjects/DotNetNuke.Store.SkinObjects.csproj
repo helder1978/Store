@@ -1,0 +1,134 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83E73D17-B148-47A9-A378-811B2EBA8A70}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNetNuke.Modules.Store.SkinObjects</RootNamespace>
+    <AssemblyName>DotNetNuke.Modules.Store.SkinObjects</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetNuke, Version=4.4.1.26939, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\DotNetNuke.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Links.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Links.ascx.cs">
+      <DependentUpon>Links.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Links.ascx.designer.cs">
+      <DependentUpon>Links.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MicroCart.ascx.cs">
+      <DependentUpon>MicroCart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MicroCart.ascx.designer.cs">
+      <DependentUpon>MicroCart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Links.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MicroCart.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Admin\DotNetNuke.Store.Admin.csproj">
+      <Project>{C82B8EDC-1246-4F04-BDF7-FAC1468B9351}</Project>
+      <Name>DotNetNuke.Store.Admin</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Cart\DotNetNuke.Store.Cart.csproj">
+      <Project>{643E0708-2DF7-4727-8032-D4EC0B0EF72D}</Project>
+      <Name>DotNetNuke.Store.Cart</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MicroCart.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Images\basket.png" />
+    <Content Include="Images\basket_add.png" />
+    <Content Include="Images\basket_delete.png" />
+    <Content Include="Images\basket_edit.png" />
+    <Content Include="Images\basket_error.png" />
+    <Content Include="Images\basket_go.png" />
+    <Content Include="Images\basket_put.png" />
+    <Content Include="Images\basket_remove.png" />
+    <Content Include="Images\cart.png" />
+    <Content Include="Images\cart_add.png" />
+    <Content Include="Images\cart_delete.png" />
+    <Content Include="Images\cart_edit.png" />
+    <Content Include="Images\cart_error.png" />
+    <Content Include="Images\cart_go.png" />
+    <Content Include="Images\cart_put.png" />
+    <Content Include="Images\cart_remove.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SOWWStoreLinks</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>copy $(ProjectDir)*.ascx $(SolutionDir)Store_02.00.00_SkinObjects_Install
+copy $(ProjectDir)App_LocalResources\*.ascx.resx $(SolutionDir)Store_02.00.00_SkinObjects_Install
+copy $(ProjectDir)Images\*.* $(SolutionDir)Store_02.00.00_SkinObjects_Install
+copy $(TargetPath) $(SolutionDir)Store_02.00.00_SkinObjects_Install</PostBuildEvent>
+  </PropertyGroup>
+</Project>

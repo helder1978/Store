@@ -1,0 +1,7 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\DotNetNuke.Modules.Store.Providers.Tax.DefaultTaxProvider.SqlDataProvider.dll
+obj\Debug\DotNetNuke.Modules.Store.Providers.Tax.DefaultTaxProvider.SqlDataProvider.dll
+obj\Debug\DotNetNuke.Modules.Store.Providers.Tax.DefaultTaxProvider.SqlDataProvider.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\DotNetNuke.Modules.Store.Providers.Tax.DefaultTaxProvider.SqlDataProvider.dll
+bin\DotNetNuke.Modules.Store.Providers.Tax.DefaultTaxProvider.SqlDataProvider.pdb

@@ -1,0 +1,473 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1CD3384-D41D-49F9-BA02-D43D836CC9ED}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNetNuke.Modules.Store.WebControls</RootNamespace>
+    <AssemblyName>DotNetNuke.Modules.Store.WebControls</AssemblyName>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>false</NoStdLib>
+    <DebugSymbols>false</DebugSymbols>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.10920.32880, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ajaxcontroltoolkit\SampleWebSite\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CountryListBox, Version=1.0.2182.26938, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\CountryListBox.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DotNetNuke, Version=4.4.1.26939, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\DotNetNuke.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.ascx.cs">
+      <DependentUpon>Account.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account.ascx.designer.cs">
+      <DependentUpon>Account.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSettings.ascx.cs">
+      <DependentUpon>AccountSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountSettings.ascx.designer.cs">
+      <DependentUpon>AccountSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminNavigation.cs" />
+    <Compile Include="CartDetail.ascx.cs">
+      <DependentUpon>CartDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartDetail.ascx.designer.cs">
+      <DependentUpon>CartDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CartNavigation.cs" />
+    <Compile Include="Catalog.ascx.cs">
+      <DependentUpon>Catalog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalog.ascx.designer.cs">
+      <DependentUpon>Catalog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogEdit.ascx.cs">
+      <DependentUpon>CatalogEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatalogEdit.ascx.designer.cs">
+      <DependentUpon>CatalogEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogNavigation.cs" />
+    <Compile Include="CatalogSettings.ascx.cs">
+      <DependentUpon>CatalogSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatalogSettings.ascx.designer.cs">
+      <DependentUpon>CatalogSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryAdmin.ascx.cs">
+      <DependentUpon>CategoryAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryAdmin.ascx.designer.cs">
+      <DependentUpon>CategoryAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryEdit.ascx.cs">
+      <DependentUpon>CategoryEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryEdit.ascx.designer.cs">
+      <DependentUpon>CategoryEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryMenu.ascx.cs">
+      <DependentUpon>CategoryMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryMenu.ascx.designer.cs">
+      <DependentUpon>CategoryMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CategorySettings.ascx.cs">
+      <DependentUpon>CategorySettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategorySettings.ascx.designer.cs">
+      <DependentUpon>CategorySettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout.ascx.cs">
+      <DependentUpon>Checkout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkout.ascx.designer.cs">
+      <DependentUpon>Checkout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CssTools.cs" />
+    <Compile Include="CustomerAdmin.ascx.cs">
+      <DependentUpon>CustomerAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerAdmin.ascx.designer.cs">
+      <DependentUpon>CustomerAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCart.ascx.cs">
+      <DependentUpon>CustomerCart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerCart.ascx.designer.cs">
+      <DependentUpon>CustomerCart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerNavigation.cs" />
+    <Compile Include="CustomerOrders.ascx.cs">
+      <DependentUpon>CustomerOrders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerOrders.ascx.designer.cs">
+      <DependentUpon>CustomerOrders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerProfile.ascx.cs">
+      <DependentUpon>CustomerProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerProfile.ascx.designer.cs">
+      <DependentUpon>CustomerProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailItemTemplate.ascx.cs">
+      <DependentUpon>DetailItemTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailItemTemplate.ascx.designer.cs">
+      <DependentUpon>DetailItemTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GridView.cs" />
+    <Compile Include="HelpAdmin.ascx.cs">
+      <DependentUpon>HelpAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HelpAdmin.ascx.designer.cs">
+      <DependentUpon>HelpAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ListItemTemplate.ascx.cs">
+      <DependentUpon>ListItemTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListItemTemplate.ascx.designer.cs">
+      <DependentUpon>ListItemTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MiniCart.ascx.cs">
+      <DependentUpon>MiniCart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MiniCart.ascx.designer.cs">
+      <DependentUpon>MiniCart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductAdmin.ascx.cs">
+      <DependentUpon>ProductAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductAdmin.ascx.designer.cs">
+      <DependentUpon>ProductAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetail.ascx.cs">
+      <DependentUpon>ProductDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetail.ascx.designer.cs">
+      <DependentUpon>ProductDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductEdit.ascx.cs">
+      <DependentUpon>ProductEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductEdit.ascx.designer.cs">
+      <DependentUpon>ProductEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductList.ascx.cs">
+      <DependentUpon>ProductList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductList.ascx.designer.cs">
+      <DependentUpon>ProductList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReviewAdmin.ascx.cs">
+      <DependentUpon>ReviewAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReviewAdmin.ascx.designer.cs">
+      <DependentUpon>ReviewAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewEdit.ascx.cs">
+      <DependentUpon>ReviewEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReviewEdit.ascx.designer.cs">
+      <DependentUpon>ReviewEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewList.ascx.cs">
+      <DependentUpon>ReviewList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReviewList.ascx.designer.cs">
+      <DependentUpon>ReviewList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SSLHelper.cs" />
+    <Compile Include="Store.ascx.cs">
+      <DependentUpon>Store.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Store.ascx.designer.cs">
+      <DependentUpon>Store.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StoreAdmin.ascx.cs">
+      <DependentUpon>StoreAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StoreAdmin.ascx.designer.cs">
+      <DependentUpon>StoreAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StoreNavigation.cs" />
+    <Compile Include="SummaryItemTemplate.ascx.cs">
+      <DependentUpon>SummaryItemTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SummaryItemTemplate.ascx.designer.cs">
+      <DependentUpon>SummaryItemTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Thumbnail.aspx.cs">
+      <DependentUpon>Thumbnail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Thumbnail.aspx.designer.cs">
+      <DependentUpon>Thumbnail.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Admin\DotNetNuke.Store.Admin.csproj">
+      <Project>{C82B8EDC-1246-4F04-BDF7-FAC1468B9351}</Project>
+      <Name>DotNetNuke.Store.Admin</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="Cart\DotNetNuke.Store.Cart.csproj">
+      <Project>{643E0708-2DF7-4727-8032-D4EC0B0EF72D}</Project>
+      <Name>DotNetNuke.Store.Cart</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="Cart\Providers\GatewayProviders\PayPalProvider\DotNetNuke.Store.Cart.PayPalProvider.csproj">
+      <Project>{A4E48EBA-02BD-4ED6-9BD2-ED647FEBD4BF}</Project>
+      <Name>DotNetNuke.Store.Cart.PayPalProvider</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="Catalog\DotNetNuke.Store.Catalog.csproj">
+      <Project>{BDC12E34-B2DB-4191-8F87-8C19519CA7E0}</Project>
+      <Name>DotNetNuke.Store.Catalog</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="Components\DotNetNuke.Store.Components.csproj">
+      <Project>{933F85DC-00FE-494A-8604-F8C5D62F85DD}</Project>
+      <Name>DotNetNuke.Store.Components</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="Customer\DotNetNuke.Store.Customer.csproj">
+      <Project>{6BCB0DBD-6F52-4481-92C2-901CB78A21D6}</Project>
+      <Name>DotNetNuke.Store.Customer</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="Providers\AddressProviders\DefaultAddressProvider\DotNetNuke.Store.Providers.Address.DefaultAddressProvider.csproj">
+      <Project>{12888BF6-7F7B-4446-97C0-181873EA30BF}</Project>
+      <Name>DotNetNuke.Store.Providers.Address.DefaultAddressProvider</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="Providers\DotNetNuke.Store.Providers.csproj">
+      <Project>{1E004752-A1DD-46C2-9AB5-687C2B4555D7}</Project>
+      <Name>DotNetNuke.Store.Providers</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account.ascx" />
+    <Content Include="AccountSettings.ascx" />
+    <Content Include="CartDetail.ascx" />
+    <Content Include="Catalog.ascx" />
+    <Content Include="CatalogEdit.ascx" />
+    <Content Include="CatalogSettings.ascx" />
+    <Content Include="CategoryAdmin.ascx" />
+    <Content Include="CategoryEdit.ascx" />
+    <Content Include="CategoryMenu.ascx" />
+    <Content Include="CategorySettings.ascx" />
+    <Content Include="Checkout.ascx" />
+    <Content Include="CustomerAdmin.ascx" />
+    <Content Include="CustomerCart.ascx" />
+    <Content Include="CustomerOrders.ascx" />
+    <Content Include="CustomerProfile.ascx" />
+    <Content Include="DetailItemTemplate.ascx" />
+    <Content Include="HelpAdmin.ascx" />
+    <Content Include="ListItemTemplate.ascx" />
+    <Content Include="MiniCart.ascx" />
+    <Content Include="ProductAdmin.ascx" />
+    <Content Include="ProductDetail.ascx" />
+    <Content Include="ProductEdit.ascx" />
+    <Content Include="ProductList.ascx" />
+    <Content Include="ReviewAdmin.ascx" />
+    <Content Include="ReviewEdit.ascx" />
+    <Content Include="ReviewList.ascx" />
+    <Content Include="Store.ascx" />
+    <Content Include="StoreAdmin.ascx" />
+    <Content Include="SummaryItemTemplate.ascx" />
+    <Content Include="Thumbnail.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Account.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AccountSettings.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddressEdit.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CartDetail.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Catalog.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CatalogSettings.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CategoryAdmin.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CategoryEdit.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CategoryMenu.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CategorySettings.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Checkout.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerAdmin.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCart.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerOrders.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerProfile.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\HelpAdmin.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ListItemTemplate.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\MiniCart.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ProductAdmin.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ProductDetail.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ProductEdit.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ProductList.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ReviewAdmin.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ReviewEdit.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ReviewList.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Store.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\StoreAdmin.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SummaryItemTemplate.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8080</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>copy $(ProjectDir)*.ascx $(SolutionDir)Store_02.00.00_Install
+copy $(ProjectDir)*.aspx $(SolutionDir)Store_02.00.00_Install
+copy $(ProjectDir)App_LocalResources\*.ascx.resx $(SolutionDir)Store_02.00.00_Install
+copy $(TargetPath) $(SolutionDir)Store_02.00.00_Install</PostBuildEvent>
+  </PropertyGroup>
+</Project>

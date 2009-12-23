@@ -1,0 +1,5 @@
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\AddressProviders\DefaultAddressProvider\bin\DotNetNuke.Modules.Store.Providers.Address.DefaultAddressProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\AddressProviders\DefaultAddressProvider\bin\DotNetNuke.Modules.Store.Providers.Address.DefaultAddressProvider.pdb
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\AddressProviders\DefaultAddressProvider\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\AddressProviders\DefaultAddressProvider\obj\Debug\DotNetNuke.Modules.Store.Providers.Address.DefaultAddressProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\AddressProviders\DefaultAddressProvider\obj\Debug\DotNetNuke.Modules.Store.Providers.Address.DefaultAddressProvider.pdb

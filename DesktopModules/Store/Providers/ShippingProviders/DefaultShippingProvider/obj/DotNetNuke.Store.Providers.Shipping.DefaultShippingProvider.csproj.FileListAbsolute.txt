@@ -1,0 +1,5 @@
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\ShippingProviders\DefaultShippingProvider\bin\DotNetNuke.Modules.Store.Providers.Shipping.DefaultShippingProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\ShippingProviders\DefaultShippingProvider\bin\DotNetNuke.Modules.Store.Providers.Shipping.DefaultShippingProvider.pdb
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\ShippingProviders\DefaultShippingProvider\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\ShippingProviders\DefaultShippingProvider\obj\Debug\DotNetNuke.Modules.Store.Providers.Shipping.DefaultShippingProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\ShippingProviders\DefaultShippingProvider\obj\Debug\DotNetNuke.Modules.Store.Providers.Shipping.DefaultShippingProvider.pdb

@@ -1,0 +1,181 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Links Table **/
+
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}Links]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+	BEGIN
+		CREATE TABLE {databaseOwner}[{objectQualifier}Links]
+		(
+			[ItemID] [int] NOT NULL IDENTITY(0, 1),
+			[ModuleID] [int] NOT NULL,
+			[CreatedByUser] [nvarchar] (100) NULL,
+			[CreatedDate] [datetime] NULL,
+			[Title] [nvarchar] (100) NULL,
+			[Url] [nvarchar] (250) NULL,
+			[ViewOrder] [int] NULL,
+			[Description] [nvarchar] (2000) NULL
+		)
+
+		ALTER TABLE {databaseOwner}[{objectQualifier}Links] ADD PRIMARY KEY NONCLUSTERED  ([ItemID])
+		CREATE NONCLUSTERED INDEX [IX_{objectQualifier}Links] ON {databaseOwner}[{objectQualifier}Links] ([ModuleID])
+
+		ALTER TABLE {databaseOwner}[{objectQualifier}Links] WITH NOCHECK ADD FOREIGN KEY ([ModuleID]) REFERENCES {databaseOwner}[{objectQualifier}Modules] ([ModuleID]) ON DELETE CASCADE NOT FOR REPLICATION
+	END
+GO
+
+
+/** Drop Existing Stored Procedures **/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}AddLink]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}AddLink
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DeleteLink]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}DeleteLink
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}GetLink]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}GetLink
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}GetLinks]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}GetLinks
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}UpdateLink]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}UpdateLink
+GO
+
+
+/** Create Stored Procedures **/
+
+create procedure {databaseOwner}{objectQualifier}AddLink
+
+	@ModuleId    int,
+	@UserName    nvarchar(100),
+	@Title       nvarchar(100),
+	@Url         nvarchar(250),
+	@ViewOrder   int,
+	@Description nvarchar(2000)
+
+as
+
+insert into {objectQualifier}Links (
+	ModuleId,
+	CreatedByUser,
+	CreatedDate,
+	Title,
+	Url,
+	ViewOrder,
+	Description
+)
+values (
+	@ModuleId,
+	@UserName,
+	getdate(),
+	@Title,
+	@Url,
+	@ViewOrder,
+	@Description
+)
+
+select SCOPE_IDENTITY()
+
+GO
+
+create procedure {databaseOwner}{objectQualifier}DeleteLink
+
+	@ItemId int
+
+as
+
+delete
+from {objectQualifier}Links
+where  ItemId = @ItemId
+
+GO
+
+CREATE procedure {databaseOwner}{objectQualifier}GetLink
+
+@ItemId   int,
+@ModuleId int
+
+as
+
+select 
+	{objectQualifier}Links.ItemId,
+	{objectQualifier}Links.ModuleId,
+	{objectQualifier}Links.Title,
+    'URL' = case when {objectQualifier}Files.FileName is null then {objectQualifier}Links.URL else {objectQualifier}Files.Folder + {objectQualifier}Files.FileName end,
+    {objectQualifier}Links.ViewOrder,
+    {objectQualifier}Links.Description,
+    'CreatedByUser' = {objectQualifier}Users.FirstName + ' ' + {objectQualifier}Users.LastName,
+    {objectQualifier}Links.CreatedDate,
+    {objectQualifier}UrlTracking.TrackClicks,
+    {objectQualifier}UrlTracking.NewWindow
+from {objectQualifier}Links
+left outer join {objectQualifier}Users on {objectQualifier}Links.CreatedByUser = {objectQualifier}Users.UserId
+left outer join {objectQualifier}UrlTracking on {objectQualifier}Links.URL = {objectQualifier}UrlTracking.Url and {objectQualifier}UrlTracking.ModuleId = @ModuleID left outer join {objectQualifier}Files on {objectQualifier}Links.URL = 'fileid=' +
+convert(varchar,{objectQualifier}Files.FileID)
+where  {objectQualifier}Links.ItemId = @ItemId
+and    {objectQualifier}Links.ModuleId = @ModuleId
+
+GO
+
+CREATE procedure {databaseOwner}{objectQualifier}GetLinks
+
+	@ModuleId int
+
+as
+
+select 
+	{objectQualifier}Links.ItemId,
+	{objectQualifier}Links.ModuleId,
+    {objectQualifier}Links.CreatedByUser,
+    {objectQualifier}Links.CreatedDate,
+    {objectQualifier}Links.Title,
+    'URL' = case when {objectQualifier}Files.FileName is null then {objectQualifier}Links.URL else {objectQualifier}Files.Folder + {objectQualifier}Files.FileName end,
+    {objectQualifier}Links.ViewOrder,
+    {objectQualifier}Links.Description,
+    {objectQualifier}UrlTracking.TrackClicks,
+    {objectQualifier}UrlTracking.NewWindow
+from {objectQualifier}Links
+left outer join {objectQualifier}UrlTracking on {objectQualifier}Links.URL = {objectQualifier}UrlTracking.Url and {objectQualifier}UrlTracking.ModuleId = @ModuleID left outer join {objectQualifier}Files on {objectQualifier}Links.URL = 'fileid=' +
+convert(varchar,{objectQualifier}Files.FileID)
+where  {objectQualifier}Links.ModuleId = @ModuleId
+order by {objectQualifier}Links.ViewOrder, {objectQualifier}Links.Title
+
+GO
+
+create procedure {databaseOwner}{objectQualifier}UpdateLink
+
+	@ItemId      int,
+	@UserName    nvarchar(100),
+	@Title       nvarchar(100),
+	@Url         nvarchar(250),
+	@ViewOrder   int,
+	@Description nvarchar(2000)
+
+as
+
+update {objectQualifier}Links
+set    CreatedByUser = @UserName,
+       CreatedDate   = GetDate(),
+       Title         = @Title,
+       Url           = @Url,
+       ViewOrder     = @ViewOrder,
+       Description   = @Description
+where  ItemId = @ItemId
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

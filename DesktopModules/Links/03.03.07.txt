@@ -1,0 +1,4 @@
+bin\DotNetNuke.Modules.Links.dll
+bin\DotNetNuke.Modules.Links.SqlDataProvider.dll
+install\module\Links_03.03.06_Install.resources
+install\module\Links_3.3_Install.resources

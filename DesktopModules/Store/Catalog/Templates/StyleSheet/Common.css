@@ -1,0 +1,67 @@
+/* ===============*/
+/* General layout */
+/* ===============*/
+
+.ProductEditMasterTABLE,
+.ProductEditSpecialOfferTABLE,
+#grdCategories,
+.CatalogSettingsFeaturedProductList,
+.CatalogSettingsPopularProductList,
+.CatalogSettingsNewProductListTABLE,
+.CatalogSettingsMasterTABLE,
+.CatalogSettingsCategoryProductList,
+.CatalogSettingsProductDetails,
+.AddressEditMasterTABLE { width:100%; border:0; }
+.AddressEditMasterTABLERightCell { width:35% }
+.AddressEditMasterTABLERLeftCell { width:65% }
+.ReviewListMasterTABLE { width:100%; }
+.ReviewEditMasterTABLE { width:80% }
+.ReviewEditMasterTABLELeftCell { width:33% }
+.ReviewEditMasterTABLERightCell { width:67% }
+.ProductListMasterTABLE { width:100%; }
+.ProductDetailMasterTABLE { width:100%; }
+.CustomerProfileMasterTABLE { width:100%; }
+.CustomerOrdersMasterTABLE { width:100%; text-align:left; }
+.CustomerOrdersDetailMasterTABLE { width:100%; }
+.CustomerCartMasterTABLE { width:100%; }
+.CheckoutMasterTABLE { width:100%; }
+.CategorySettingsMasterTABLE { width:100%; }
+.CategorySettingsMasterTABLERightCell { }
+.CategorySettingsMasterTABLELeftCell { }
+.Store-DataGrid { text-align:center; width:100%; border:0; }
+.CartDetailsMasterTABLE .Store-DataGrid { width:100%; border:0; }
+.CartDetailsMasterTABLE { width:100%; border:0; }
+.Store-CommandDetails .Normal { text-align:left; border:0; }
+.Store-CommandDetails .NormalBold { text-align:left; border:0; }
+.Store-checkout-Entity { }
+
+
+/* Module Store Menu */
+/* Categories */
+/* ========== */
+.Store-CategoryMenu-Entity { }
+.Store-CategoryMenu-Header { height:5px; }
+.Store-CategoryMenu-ItemSelected A:link,
+.Store-CategoryMenu-ItemSelected A:active,
+.Store-CategoryMenu-ItemSelected A:visited,
+.Store-CategoryMenu-ItemSelected { }
+.Store-CategoryMenu-ItemSelected A.:hover {
+}
+.Store-CategoryMenu-Item A.:link,
+.Store-CategoryMenu-Item A.:active,
+.Store-CategoryMenu-Item A.:visited,
+.Store-CategoryMenu-Item {
+}
+.Store-CategoryMenu-Item A.:hover {
+}
+.Store-CategoryMenu-Footer { height:5px; }
+
+
+/* Module Store Account */
+/* ====================== */
+.Store-Account-BtnTD,
+.Store-Account-BtnTD A:link,
+.Store-Account-BtnTD A:active,
+.Store-Account-BtnTD A:visited { }
+.Store-Account-BtnTD A:hover { }
+.Store-Account-BtnTD { padding:0 15px 0 0; text-align:right; float:right; margin-top:-20px; }

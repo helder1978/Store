@@ -1,0 +1,7 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\DotNetNuke.Modules.Store.Admin.SqlDataProvider.dll
+obj\Debug\DotNetNuke.Modules.Store.Admin.SqlDataProvider.dll
+obj\Debug\DotNetNuke.Modules.Store.Admin.SqlDataProvider.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\DotNetNuke.Modules.Store.Admin.SqlDataProvider.dll
+bin\DotNetNuke.Modules.Store.Admin.SqlDataProvider.pdb

@@ -1,0 +1,5 @@
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\Providers\DataProviders\SqlDataProvider\bin\DotNetNuke.Modules.Store.Cart.SqlDataProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\Providers\DataProviders\SqlDataProvider\bin\DotNetNuke.Modules.Store.Cart.SqlDataProvider.pdb
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\Providers\DataProviders\SqlDataProvider\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\Providers\DataProviders\SqlDataProvider\obj\Debug\DotNetNuke.Modules.Store.Cart.SqlDataProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Cart\Providers\DataProviders\SqlDataProvider\obj\Debug\DotNetNuke.Modules.Store.Cart.SqlDataProvider.pdb

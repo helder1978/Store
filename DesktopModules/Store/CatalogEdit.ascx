@@ -1,0 +1,2 @@
+<%@ Control Language="c#" AutoEventWireup="True" Codebehind="CatalogEdit.ascx.cs" Inherits="DotNetNuke.Modules.Store.WebControls.Edit" targetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
+<asp:placeholder id="plhControls" runat="server" />

@@ -1,0 +1,100 @@
+/* CataLog Entity */
+.CatalogWrapper { width:100%; padding:5px 0; position:relative; }
+
+
+/* New Products */
+/* Note : This template will be repeated in a non-fixed number of row and lines */
+DIV.NewProduct-Entity { margin:15px; display:inline; }
+.NewProduct-Entity { position:relative; width:240px; max-width:300px; text-align:center; padding:5px 5px 0 5px; }
+.NewProduct-Entity SPAN, .NewProduct-Entity P, .NewProduct-Entity TABLE, .NewProduct-Entity TD, {
+}
+.NewProduct-Entity A.normalbold:link,
+.NewProduct-Entity A.normalbold:visited { }
+.NewProduct-Entity A.normalbold:hover { }
+.NewProduct-Image { width:90px; height:90px; display:block; vertical-align:middle; text-align:center; margin:Auto; }
+.NewProduct-Image IMG { border:0; }
+.NewProduct-Price SPAN { height : 45px; display:block; padding-top:11px; }
+.NewProduct-AddToCart { height : 45px; display:block; padding-bottom:10px; text-align:center; }
+.NewProduct-AddToCart A:link,
+.NewProduct-AddToCart A:visited,
+.NewProduct-AddToCart A:active { }
+.NewProduct-LinkDetail { height : 15px; display:block; text-align:right; }
+.NewProduct-Title SPAN { display:block; text-align:center; padding:20px 8px 20px 8px; }
+.NewProduct-Title A.normalbold:link,
+.NewProduct-Title A.normalbold:visited { }
+.NewProduct-Title A.normalbold:hover { }
+.NewProduct-Summary { text-align:left; }
+
+
+/* Featured Products */
+/* Note : This template will be repeated in a non-fixed number of row and lines */
+.FeaturedProduct-Entity { position:relative; width:270px; max-width:300px; text-align:center; padding:5px 5px 0 5px; }
+.FeaturedProduct-Entity SPAN, .FeaturedProduct-Entity P, .FeaturedProduct-Entity TABLE, .FeaturedProduct-Entity TD, {
+}
+.FeaturedProduct-Entity A.normalbold:link,
+.FeaturedProduct-Entity A.normalbold:visited { }
+.FeaturedProduct-Entity A.normalbold:hover { ;
+}
+.FeaturedProduct-Image { width:120px; height:90px; display:block; vertical-align:middle; text-align:center; margin:Auto; }
+.FeaturedProduct-Image IMG { border:0; }
+.FeaturedProduct-Right { display:block; text-align:left; }
+.FeaturedProduct-Price SPAN { height : 35px; display:inline; }
+.FeaturedProduct-AddToCart { height : 35px; display:block; }
+.FeaturedProduct-AddToCart A:link A:visited A:active { }
+.FeaturedProduct-LinkDetail { height : 35px; display:block; }
+.FeaturedProduct-Title SPAN { display:block; text-align:center; padding:20px 8px 20px 8px; }
+.FeaturedProduct-Title A.normalbold:link,
+.FeaturedProduct-Title A.normalbold:visited { }
+.FeaturedProduct-Title A.normalbold:hover { }
+.FeaturedProduct-Summary { text-align:left; }
+
+
+/* Popular Products */
+/* Note : This template will be repeated in a non-fixed number of row and lines */
+DIV.PopularProduct-Entity { margin:0px; display:inline; width:100%; }
+.PopularProduct-Entity { position:relative; text-align:left; padding:5px; }
+.PopularProduct-Entity SPAN, .PopularProduct-Entity P, .PopularProduct-Entity TABLE, .PopularProduct-Entity TD, {
+}
+.PopularProduct-Entity A.normalbold:link,
+.PopularProduct-Entity A.normalbold:visited { }
+.PopularProduct-Entity A.normalbold:hover { }
+.PopularProduct-Price SPAN { display:block; }
+.PopularProduct-LinkDetail { display:block; text-align:right; }
+.PopularProduct-Title { display:block; text-align:left; width:60%; }
+.PopularProduct-Title SPAN { display:block; text-align:left; }
+.PopularProduct-Title A.normalbold:link,
+.PopularProduct-Title A.normalbold:visited { }
+.PopularProduct-Title A.normalbold:hover { }
+
+
+/* Product Details */
+/* Note : This template will be displayed one time on a Tab */
+.ProductDetail-Entity,
+.ProductDetail-Top,
+ProductDetail-Bottom { position:relative; width:100%; text-align:center; padding:5px 5px 0 5px; }
+.ProductDetail-Entity SPAN, .ProductDetail-Entity P, .ProductDetail-Entity TABLE, .ProductDetail-Entity TD, {
+}
+.ProductDetail-Entity A.normalbold:link,
+.ProductDetail-Entity A.normalbold:visited { }
+.ProductDetail-Entity A.normalbold:hover { }
+.ProductDetail-Entity TABLE P TD TR SPAN { }
+.ProductDetail-Image { width:300px; height:150px; display:block; vertical-align:middle; text-align:center; margin:Auto; }
+.ProductDetail-Image IMG { border:0; }
+.ProductDetail-Right { display:block; text-align:left; }
+.ProductDetail-Price SPAN { height : 35px; display:inline; }
+.ProductDetail-VATPrice SPAN { height : 45px; }
+.ProductDetail-AddToCart { height : 35px; display:block; }
+.ProductDetail-AddToCart A:link A:visited A:active { }
+.ProductDetail-LinkDetail { height : 35px; display:block; }
+.ProductDetail-Title SPAN { display:block; text-align:center; padding:20px 8px 20px 8px; }
+.ProductDetail-Title A.normalbold:link,
+.ProductDetail-Title A.normalbold:visited { }
+.ProductDetail-Title A.normalbold:hover { }
+.ProductDetail-Summary { text-align:left; padding:30px; }
+
+
+/* List Container entity */
+.ListContainer-Entity { text-align:left; }
+.ListContainer-Title { width:100%; border-bottom:1px dotted red; padding:5px 0 10px 25px; }
+.ListContainer-Title SPAN { display:inline; width:1px; min-width:1px; white-space:nowrap; }
+.ListContainer-Content { }

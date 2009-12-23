@@ -1,0 +1,134 @@
+/* ==========================
+    CSS STYLES FOR HouseMenu
+   ==========================
+*/
+
+/* Applied to all unordered lists within the div named "houseMenuVstatic" */
+#houseMenuVstatic ul
+{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	list-style-type: none;
+	width: 144px;
+}
+
+/* Applied to all list items within the div named "houseMenuVstatic" */
+#houseMenuVstatic li
+{
+	display: inline;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	width: 144px;
+}
+
+/* Applied to all links. Use "li a" styles below to customize nested links. */
+#houseMenuVstatic a
+{
+	padding-right: 6px;
+	display: block;
+	padding-left: 6px;
+	padding-bottom: 4px;
+	color: #ffffff;
+	padding-top: 4px;
+	background-color: #003366;
+	text-decoration: none;
+	font-weight: bold;
+	width: 138px;
+	_width: 144px;
+	margin: 0;
+}
+
+/* Applied to all links. Use "li a" styles below to customize nested links. */
+#houseMenuVstatic a:hover
+{
+	background-color: #336699;
+	color: #ffffff;
+}
+
+/* Applied to first-level links */
+#houseMenuVstatic ul a
+{
+}
+
+/* Applied to second-level links */
+#houseMenuVstatic ul ul a
+{
+	padding-left: 12px;
+	background-color: #6699cc;
+	width: 138px;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	width: 132px;
+	_width: 144px;
+	/* end hack */
+}
+
+/* Applied to third-level links */
+#houseMenuVstatic ul ul ul a
+{
+	padding-left: 18px;
+	background-color: #6699cc;
+	width: 138px;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	width: 126px;
+	_width: 144px;
+	/* end hack */
+}
+
+/* Applied to fourth-level links */
+#houseMenuVstatic ul ul ul ul a
+{
+	padding-left: 24px;
+	background-color: #6699cc;
+	width: 138px;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	width: 120px;
+	_width: 144px;
+	/* end hack */
+}
+
+/* Applied to fifth-level links */
+#houseMenuVstatic ul ul ul ul ul a
+{
+	padding-left: 30px;
+	background-color: #6699cc;
+	font-weight: normal;
+	width: 138px;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	width: 114px;
+	_width: 144px;
+	/* end hack */
+}
+
+.ArrowPointer
+{
+	cursor: default;
+}
+
+
+
+/* Applied to the parent item, if displayed, in either vertical or horizontal
+   orientation. Must follow other styles. */
+#houseMenuParentItem a
+{ /* all links under the parent item (li) */
+	color: #eeeeee;
+	background-color: #666;
+	text-decoration: none;
+}
+
+a#houseMenuParentLink
+{ /* parent link itself */
+	color: #eeeeee;
+	background-color: #333;
+	text-decoration: none;
+}
+
+a#houseMenuCurrentLink
+{ /* current link itself */
+	color: #ffffff;
+	background-color: #600;
+	text-decoration: none;
+}

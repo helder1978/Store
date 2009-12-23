@@ -1,0 +1,5 @@
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Admin\bin\DotNetNuke.Modules.Store.Admin.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Admin\bin\DotNetNuke.Modules.Store.Admin.pdb
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Admin\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Admin\obj\Debug\DotNetNuke.Modules.Store.Admin.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Admin\obj\Debug\DotNetNuke.Modules.Store.Admin.pdb

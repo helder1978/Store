@@ -1,0 +1,7 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\DotNetNuke.Modules.Store.Components.dll
+obj\Debug\DotNetNuke.Modules.Store.Components.dll
+obj\Debug\DotNetNuke.Modules.Store.Components.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\DotNetNuke.Modules.Store.Components.dll
+bin\DotNetNuke.Modules.Store.Components.pdb

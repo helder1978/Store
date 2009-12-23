@@ -1,0 +1,5 @@
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Customer\bin\DotNetNuke.Modules.Store.Customer.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Customer\bin\DotNetNuke.Modules.Store.Customer.pdb
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Customer\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Customer\obj\Debug\DotNetNuke.Modules.Store.Customer.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Customer\obj\Debug\DotNetNuke.Modules.Store.Customer.pdb

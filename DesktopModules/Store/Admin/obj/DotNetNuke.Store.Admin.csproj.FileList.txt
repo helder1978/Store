@@ -1,0 +1,7 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\DotNetNuke.Modules.Store.Admin.dll
+obj\Debug\DotNetNuke.Modules.Store.Admin.dll
+obj\Debug\DotNetNuke.Modules.Store.Admin.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\DotNetNuke.Modules.Store.Admin.dll
+bin\DotNetNuke.Modules.Store.Admin.pdb

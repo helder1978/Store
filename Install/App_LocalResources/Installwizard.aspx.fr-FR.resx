@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdminUser.Text" xml:space="preserve">
+    <value>Administrateur du Site</value>
+  </data>
+  <data name="AdminUserError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Erreur pour l'utilisateur Administrateur :&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="Auto.Text" xml:space="preserve">
+    <value>&lt;b&gt;Auto&lt;/b&gt; - L'installation "Auto" court-circuite l'assistant et utilise l'ancienne procédure d'auto installation.</value>
+  </data>
+  <data name="ChooseDatabase.Text" xml:space="preserve">
+    <value>Sélectionnez la base de données :</value>
+  </data>
+  <data name="ChooseDbError.Text" xml:space="preserve">
+    <value>Vous devez choisir un type de base de données</value>
+  </data>
+  <data name="ChooseInstall.Text" xml:space="preserve">
+    <value>&lt;h3&gt;Sélectionnez la méthode d'installation :&lt;/h3&gt;</value>
+  </data>
+  <data name="ChooseLanguage.Text" xml:space="preserve">
+    <value>&lt;h3&gt;Choisissez la langue :&lt;/h3&gt;</value>
+  </data>
+  <data name="Complete.Text" xml:space="preserve">
+    <value>Installation terminée</value>
+  </data>
+  <data name="CompleteDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Félicitations, vous avez correctement installé DotNetNuke.&lt;/p&gt;</value>
+  </data>
+  <data name="CompleteTitle.Text" xml:space="preserve">
+    <value>Félicitations</value>
+  </data>
+  <data name="Confirm.Text" xml:space="preserve">
+    <value>Confirmez le mot de passe :</value>
+  </data>
+  <data name="ConfirmPassword.Text" xml:space="preserve">
+    <value>Le mot de passe de confirmation saisi diffère du mot de passe initial.</value>
+  </data>
+  <data name="ConnectError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Erreur(s) à la Connexion:&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="ConnectSuccess.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='green'&gt;Succès de la connexion &lt;/font&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="Containers.Text" xml:space="preserve">
+    <value>Containers</value>
+  </data>
+  <data name="Database.Text" xml:space="preserve">
+    <value>Base de données :</value>
+  </data>
+  <data name="DatabaseFile.Text" xml:space="preserve">
+    <value>Nom du fichier :</value>
+  </data>
+  <data name="DatabaseFileHelp.Text" xml:space="preserve">
+    <value>Entrez le nom du fichier de la base de données (situé dans le répertoire App_Data)</value>
+  </data>
+  <data name="DatabaseHelp.Text" xml:space="preserve">
+    <value>Entrez le nom de la base de données</value>
+  </data>
+  <data name="Email.Text" xml:space="preserve">
+    <value>Adresse de courriel :</value>
+  </data>
+  <data name="Failure.Text" xml:space="preserve">
+    <value>ECHEC</value>
+  </data>
+  <data name="FileCreate.Text" xml:space="preserve">
+    <value>Créer le fichier</value>
+  </data>
+  <data name="FileDelete.Text" xml:space="preserve">
+    <value>Supprimer le fichier</value>
+  </data>
+  <data name="Finished.Text" xml:space="preserve">
+    <value>Terminé (accéder au site)</value>
+  </data>
+  <data name="FirstName.Text" xml:space="preserve">
+    <value>Prénom :</value>
+  </data>
+  <data name="FolderCreate.Text" xml:space="preserve">
+    <value>Créer le répertoire</value>
+  </data>
+  <data name="FolderDelete.Text" xml:space="preserve">
+    <value>Supprimer le répertoire</value>
+  </data>
+  <data name="Full.Text" xml:space="preserve">
+    <value>&lt;b&gt;Personnalisée&lt;/b&gt; - La méthode d’installation « Custom » vous permet de personnaliser entièrement votre installation de DotNetNuke. Sélectionnez cette option si vous souhaitez contrôler les composants optionnels à installer.</value>
+  </data>
+  <data name="HomePage.Text" xml:space="preserve">
+    <value>Page d'accueil</value>
+  </data>
+  <data name="HostUserError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Erreur pour l'utilisateur Hôte :&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="Install.Error" xml:space="preserve">
+    <value>Il y a eu un problème durant l'installation de la base de données.</value>
+  </data>
+  <data name="Install.Text" xml:space="preserve">
+    <value>Installer les scripts de la base de données</value>
+  </data>
+  <data name="InstallComplete.Text" xml:space="preserve">
+    <value>Installation des scripts de la base de données achevée</value>
+  </data>
+  <data name="InstallDatabase.Text" xml:space="preserve">
+    <value>Installation de la base de données - Version {0}</value>
+  </data>
+  <data name="Installed.Text" xml:space="preserve">
+    <value>&lt;p&gt;DotNetNuke est déjà installé sur ce système.&lt;/p&gt;</value>
+  </data>
+  <data name="Installing.Text" xml:space="preserve">
+    <value>Installation des scripts en base de données ...   </value>
+  </data>
+  <data name="InstallLanguagesError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Erreur à l'installation de la (des) Langue(s) :&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="InstallModuleError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Erreur à l'installation du (des) Module(s) :&lt;/font&gt;&lt;/b&gt;&lt;br/&gt; {0}</value>
+  </data>
+  <data name="InstallPortalError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Erreur à l'installation du Site :&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="InstallScript.Text" xml:space="preserve">
+    <value>Mise à jour vers la Version {0}</value>
+  </data>
+  <data name="InstallSkinsError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Erreur à l'installation du Thème/Container :&lt;/font&gt;&lt;/b&gt;&lt;br/&gt; {0}</value>
+  </data>
+  <data name="Integrated.Text" xml:space="preserve">
+    <value>Sécurité intégrée :</value>
+  </data>
+  <data name="IntegratedHelp.Text" xml:space="preserve">
+    <value>Cochez si vous utilisez l'authentification SQL Server intégrée, ce qui implique que vous utiliserez le compte Windows en charge du processus Asp.net pour accéder à SQL Server. Si vous  utilisez SQL Server Express, alors vous devrez très probablement sélectionner cette option. Si on vous a fourni un nom d’utilisateur/mot de passe pour accéder à votre base de données, laissez la case décochée et saisissez votre identifiant de connexion.</value>
+  </data>
+  <data name="InValidEmail.Text" xml:space="preserve">
+    <value>L'adresse de courriel est invalide</value>
+  </data>
+  <data name="Languages.Text" xml:space="preserve">
+    <value>Langues</value>
+  </data>
+  <data name="LastName.Text" xml:space="preserve">
+    <value>Nom :</value>
+  </data>
+  <data name="MachineKey.Error" xml:space="preserve">
+    <value>Erreur à la mise à jour de la clé d'encryption Machine(fichier Web.config)</value>
+  </data>
+  <data name="MinUserNamelength.Text" xml:space="preserve">
+    <value>Le nom d'utilisateur doit comprendre au moins 4 caractères</value>
+  </data>
+  <data name="Modules.Text" xml:space="preserve">
+    <value>Modules</value>
+  </data>
+  <data name="NoContainers.Text" xml:space="preserve">
+    <value>Il n'y a pas de container optionnel à installer</value>
+  </data>
+  <data name="NoLanguages.Text" xml:space="preserve">
+    <value>Il n'y a pas de langue à installer.</value>
+  </data>
+  <data name="NoModules.Text" xml:space="preserve">
+    <value>Il n'y a pas de module à installer</value>
+  </data>
+  <data name="NoPassword.Text" xml:space="preserve">
+    <value>Vous devez fournir un mot de passe pour l'utilisateur</value>
+  </data>
+  <data name="NoSkins.Text" xml:space="preserve">
+    <value>Il n'y a pas de thème optionnel à installer</value>
+  </data>
+  <data name="Oracle.Text" xml:space="preserve">
+    <value>Base de données Oracle</value>
+  </data>
+  <data name="Owner.Text" xml:space="preserve">
+    <value>Exécuter les requêtes en base en tant que propriétaire (db Owner) :</value>
+  </data>
+  <data name="OwnerHelp.Text" xml:space="preserve">
+    <value>Cochez si vous accédez à la base de données en tant que propriétaire (db Owner)- Si vous laissez la case décochée, vous utiliserez la base avec le nom d'utilisateur spécifié.</value>
+  </data>
+  <data name="Page0.Title" xml:space="preserve">
+    <value>Bienvenue</value>
+  </data>
+  <data name="IntroDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Bienvenue dans l’Assistant d’installation de DotNetNuke. Cet assistant vous guidera tout au long de l’installation de DotNetNuke.&lt;/p&gt;
+&lt;p&gt;Vous pouvez naviguer dans l’assistant à l’aide des boutons Suivant et Précèdent. Dans certaines pages, vous verrez un troisième bouton « Test… ». Ce bouton vous permettra de tester certains points de configuration avant de continuer, afin de voir les effets de vos changements.&lt;/p&gt;
+&lt;p&gt;La première étape consiste à sélectionner la méthode d’installation à utiliser et à choisir la langue que vous souhaitez utiliser pour l’installation.&lt;/p&gt;
+
+</value>
+  </data>
+  <data name="IntroTitle.Text" xml:space="preserve">
+    <value>Assistant d'Installation de DotNetNuke - Version {0}</value>
+  </data>
+  <data name="Page1.Title" xml:space="preserve">
+    <value>Permissions des fichiers</value>
+  </data>
+  <data name="PermissionsDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;DotNetNuke a des fonctionnalités de chargement en ligne pour les contenus, langues,  modules et thèmes graphiques. Ces fonctions nécessitent des paramètres de sécurité appropriés pour que l’application puisse créer et supprimer les fichiers de votre site web.&lt;/p&gt;
+&lt;p&gt;Cette page vérifie les permissions d’accès aux répertoires fichiers afin de s’assurer que ces fonctionnalités s’exécuteront correctement.&lt;/p&gt;</value>
+  </data>
+  <data name="PermissionsTitle.Text" xml:space="preserve">
+    <value>Vérification des permissions d'accès aux fichiers</value>
+  </data>
+  <data name="Page2.Title" xml:space="preserve">
+    <value>Configuration de la base de données</value>
+  </data>
+  <data name="DatabaseConfigDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Vous pouvez configurer les paramètres de base de données de DotNetNuke dans cette page. Si vous installez DotNetNuke sur un compte d’hébergement, votre hébergeur devrait vous avoir fourni les informations appropriées.&lt;/p&gt;
+&lt;p&gt;Il y a deux options pour SQL Server 2005. SQL Server 2005 supporte l’accès aux bases de données par fichier. Dans la plupart des cas, vous devriez utiliser l’option base de données, mais si vous utilisez SQL Server 2005 Express, alors vous devriez utiliser l’option Fichier.&lt;/p&gt;</value>
+  </data>
+  <data name="DatabaseConfigTitle.Text" xml:space="preserve">
+    <value>Configurez la connexion à la base de données</value>
+  </data>
+  <data name="Page3.Title" xml:space="preserve">
+    <value>Installation de la base de données</value>
+  </data>
+  <data name="DatabaseInstallDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;L’installation des scripts de la base de données devrait avoir démarré au chargement de cette page. Les boutons Précèdent et Suivant seront désactivés jusqu’à ce que les scripts soient installés&lt;/p&gt;</value>
+  </data>
+  <data name="DatabaseInstallTitle.Text" xml:space="preserve">
+    <value>Exécution des scripts d'installation de la base de données</value>
+  </data>
+  <data name="Page4.Title" xml:space="preserve">
+    <value>Utilisateur Hôte</value>
+  </data>
+  <data name="HostUserDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Dans cette page, vous devez fournir les informations pour la création du super-utilisateur ou hôte. Cet utilisateur a accès à tous les portails créés sur le site, et une attention particulière doit être portée pour fournir un compte correctement sécurisé (complexité nom d’utilisateur / mot de passe).&lt;/p&gt;</value>
+  </data>
+  <data name="HostUserTitle.Text" xml:space="preserve">
+    <value>Configuration de l'utilisateur Hôte</value>
+  </data>
+  <data name="Page5.Title" xml:space="preserve">
+    <value>Installation de Modules</value>
+  </data>
+  <data name="ModulesDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;DotNetNuke est un système fortement extensible, par l’implémentation du concept de modules « installables ». &lt;/p&gt;&lt;p&gt;Dans cette page, vous pouvez choisir les modules optionnels à installer. Installer les modules les rend accessibles depuis l’éditeur de page.&lt;/p&gt;</value>
+  </data>
+  <data name="ModulesTitle.Text" xml:space="preserve">
+    <value>Installation de Modules optionnels</value>
+  </data>
+  <data name="Page9.Title" xml:space="preserve">
+    <value>Installation du site</value>
+  </data>
+  <data name="PortalDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Dans cette page, vous configurez le site hôte (site web initial). &lt;/p&gt;
+&lt;p&gt;Vous devrez fournir un compte administrateur. Cet utilisateur accède à l’ensemble des fonctionnalités du portail et  comme pour le compte hôte, une attention particulière doit être portée pour fournir un compte correctement sécurisé (complexité nom d’utilisateur / mot de passe). &lt;/p&gt;</value>
+  </data>
+  <data name="PortalTitle.Text" xml:space="preserve">
+    <value>Installation du site hôte</value>
+  </data>
+  <data name="Page7.Title" xml:space="preserve">
+    <value>Installation des thèmes</value>
+  </data>
+  <data name="SkinsDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;DotNetNuke possède un puissant système de personnalisation du design, par le biais de thèmes et containers graphiques. Dans cette page vous pouvez choisir les thèmes et containers optionnels à installer. &lt;/p&gt;
+&lt;p&gt;L’installation d’un thème ou d’un container ne l’active pas automatiquement, mais vous la rend accessible.&lt;/p&gt;</value>
+  </data>
+  <data name="SkinsTitle.Text" xml:space="preserve">
+    <value>Installation des thèmes et containers optionnels</value>
+  </data>
+  <data name="Page8.Title" xml:space="preserve">
+    <value>Installation des langues</value>
+  </data>
+  <data name="LanguagesDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;DotNetNuke est entièrement localisable. Dans cette page, vous pouvez choisir les langues que vous souhaitez installer. &lt;/p&gt;
+&lt;p&gt;Installer une langue ne l’active pas automatiquement, mais vous la rend accessible&lt;/p&gt;</value>
+  </data>
+  <data name="LanguagesTitle.Text" xml:space="preserve">
+    <value>Installation des packs de langues</value>
+  </data>
+  <data name="Password.Text" xml:space="preserve">
+    <value>Mot de passe :</value>
+  </data>
+  <data name="PasswordHelp.Text" xml:space="preserve">
+    <value>Entrez le mot de passe pour la base de données</value>
+  </data>
+  <data name="PasswordLength.Text" xml:space="preserve">
+    <value>le mot de passe doit contenir au moins {0} caractères.</value>
+  </data>
+  <data name="PasswordUser.Text" xml:space="preserve">
+    <value>Vous ne devez pas définir un mot de passe identique au nom d'utilisateur.</value>
+  </data>
+  <data name="Permissions.Text" xml:space="preserve">
+    <value>Résumé des permissions fichiers :</value>
+  </data>
+  <data name="PermissionsError.Text" xml:space="preserve">
+    <value>&lt;img alt="Image illustrant les paramètres de sécurité du répertoire à la racine du site web ; ils doivent être définis à Lire, Ecrire et Modification pour le compte ASPNET ou NTAUTHORITY/NETWORK SERVICE / SERVICE RESEAU (identité asp.net selon la version de Windows)." src="..\403-3.gif" align="right" hspace="10"&gt;
+&lt;p&gt;&lt;b&gt;&lt;font color='red'&gt;Votre site n'a pas passé la vérification des permissions.&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
+En utilisant l'explorateur windows, naviguez au répertoire racine du site (C:\DotNetNuke par défaut). Ouvrez les propriétés du répertoire, l'onglet Sécurité  (notez que sous Windows XP, vous pouvez avoir besoin d’ &lt;a href="http://www.commentcamarche.net/configuration-reseau/partage-fichiers.php3" target="_blank"&gt;activer le partage de fichiers simplifié&lt;/a&gt;  avant que ces options ne soient disponibles). Ajoutez le compte approprié et attribuez les permissions.
+&lt;br/&gt;&lt;br/&gt;
+&lt;h3&gt;Sous Windows XP/2000 - IIS5&lt;/h3&gt;
+&lt;p&gt;Le compte {Server}\ASPNET  doit avoir les permissions en lecture, écriture et modification à la racine du site web. &lt;/p&gt;
+&lt;h3&gt;Sous Windows 2003 - IIS6&lt;/h3&gt;
+&lt;p&gt;le compte  NT AUTHORITY\NETWORK SERVICE\SERVICE RESEAU doit avoir les permissions en lecture, écriture et modification à la racine du site web. &lt;/p&gt;</value>
+  </data>
+  <data name="PermissionsOk.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='green'&gt;Votre site a validé la vérification des permissions fichiers.&lt;/font&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="Portal.Text" xml:space="preserve">
+    <value>Propriétés du site</value>
+  </data>
+  <data name="PortalTemplate.Text" xml:space="preserve">
+    <value>Gabarit :</value>
+  </data>
+  <data name="PortalTitle.Text" xml:space="preserve">
+    <value>Titre du ste :</value>
+  </data>
+  <data name="Qualifier.Text" xml:space="preserve">
+    <value>Préfixe des objets en base :</value>
+  </data>
+  <data name="QualifierHelp.Text" xml:space="preserve">
+    <value>Entrez un préfixe optionnel à rajouter à tous les objets en base de données - Ceci peut aider à éviter les conflits de dénomination.</value>
+  </data>
+  <data name="ScriptError.Text" xml:space="preserve">
+    <value>Voir {0} pour plus d'information</value>
+  </data>
+  <data name="Server.Text" xml:space="preserve">
+    <value>Serveur :</value>
+  </data>
+  <data name="ServerHelp.Text" xml:space="preserve">
+    <value>Saisissez le nom ou l'adresse IP de l'ordinateur ou la base de données est située.  (Si vous utilisez Oracle, entrez la source de données (SID))
+</value>
+  </data>
+  <data name="Skins.Text" xml:space="preserve">
+    <value>Thèmes</value>
+  </data>
+  <data name="SQLServer.Text" xml:space="preserve">
+    <value>Base de données SQL Server 2000/2005</value>
+  </data>
+  <data name="SQLServerXPress.Text" xml:space="preserve">
+    <value>Fichier SQL Server 2005 (Express)</value>
+  </data>
+  <data name="Success.Text" xml:space="preserve">
+    <value>Succès</value>
+  </data>
+  <data name="TestDB.Text" xml:space="preserve">
+    <value>Test de la connexion à la base de données</value>
+  </data>
+  <data name="TestPerm.Text" xml:space="preserve">
+    <value>Test des Permissions sur les fichiers</value>
+  </data>
+  <data name="Title.Text" xml:space="preserve">
+    <value>Assistant d'installation de DotNetNuke</value>
+  </data>
+  <data name="Typical.Text" xml:space="preserve">
+    <value>&lt;b&gt;Typique&lt;/b&gt;  - L'installation "typique" pré remplit certains paramètres avec des valeurs courantes.</value>
+  </data>
+  <data name="Upgrade.Text" xml:space="preserve">
+    <value>&lt;p&gt;DotNetNuke est déjà installé en version {0}. Cliquez le bouton suivant pour mettre à jour vers la nouvelle version.&lt;/p&gt;</value>
+  </data>
+  <data name="UpgradeTitle.Text" xml:space="preserve">
+    <value>Assistant de mise à jour de DotNetNuke - Version {0}</value>
+  </data>
+  <data name="UserHelp.Text" xml:space="preserve">
+    <value>Entrez l'identifiant utilisateur pour la base de données</value>
+  </data>
+  <data name="UserId.Text" xml:space="preserve">
+    <value>ID Utilisateur :</value>
+  </data>
+  <data name="UserName.Text" xml:space="preserve">
+    <value>Nom d'utilisateur :</value>
+  </data>
+  <data name="WhatsNext.Text" xml:space="preserve">
+    <value>La suite</value>
+  </data>
+</root>

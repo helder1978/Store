@@ -1,0 +1,10 @@
+<div id="dnn_ctr349_HtmlModule_HtmlModule_lblContent" class="Normal">
+	<P>If your site was installed automatically, a couple of default user accounts were created which allow you to access the various site management features offered by the application. In this case, please take note of the following user account information:</P>
+<P><STRONG>Administrator Login:</STRONG> <BR><BR>Username: admin<BR>Password: dnnadmin<BR><BR>* The Administrator account is a privileged user account which allows you to manage various aspects of your site. Once you login as the Administrator, an Admin menu option will be visible in the site navigation. Please note that the first time you login to the site using this account, you will be prompted to enter a new password for security purposes.</P>
+<P><B>Host Login:</B><BR><BR>Username: host<BR>Password: dnnhost<BR><BR>* The Host account is a highly privileged user account which allows you to manage various aspects of your hosting environment. Once you login as the Host, a Host menu option will be visible in the site navigation. Please note that the first time you login to the site using this account, you will be prompted to enter a new password for security purposes.</P>
+</div>
+
+
+
+
+

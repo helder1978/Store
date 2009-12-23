@@ -1,0 +1,5 @@
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Customer\Providers\DataProviders\SqlDataProvider\bin\DotNetNuke.Modules.Store.Customer.SqlDataProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Customer\Providers\DataProviders\SqlDataProvider\bin\DotNetNuke.Modules.Store.Customer.SqlDataProvider.pdb
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Customer\Providers\DataProviders\SqlDataProvider\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Customer\Providers\DataProviders\SqlDataProvider\obj\Debug\DotNetNuke.Modules.Store.Customer.SqlDataProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Customer\Providers\DataProviders\SqlDataProvider\obj\Debug\DotNetNuke.Modules.Store.Customer.SqlDataProvider.pdb

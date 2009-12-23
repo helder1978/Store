@@ -1,0 +1,20 @@
+/* Module Store Minicart */
+/* MiniCart */
+/* ======== */
+DIV.Store-MiniCart-Entity { text-align:center; padding:5px; }
+.MiniCartMasterTABLE { width:300px; text-align:center; border:0; padding-bottom:20px; }
+.MiniCartMasterTABLE TD,
+.MiniCartMasterTABLE SPAN { text-align:center; border:0; }
+.MiniCartMasterTABLE .Store-DataGrid { border:0; }
+.MiniCartMasterTABLE .Normal { }
+.MiniCartMasterTABLE .NormalBold { }
+.MiniCartMasterTABLE A:link,
+.MiniCartMasterTABLE A:visited,
+.MiniCartMasterTABLE A:active,
+.MiniCartMasterTABLE A:hover { }
+.Store-MiniCart-BtnViewCartMasterTD { text-align:center; vertical-align:middle; height:15px; }
+.Store-MiniCart-BtnViewCartMasterTD .Normal { } /* Button View Cart */
+.Store-MiniCart-BtnViewCartMasterTD A.Normal:link,
+.Store-MiniCart-BtnViewCartMasterTD A.Normal:visited,
+.Store-MiniCart-BtnViewCartMasterTD A.Normal:active,
+.Store-MiniCart-BtnViewCartMasterTD A.Normal:hover { }

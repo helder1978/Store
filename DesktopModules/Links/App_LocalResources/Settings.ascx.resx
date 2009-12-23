@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="plControl.Text">
+		<value>Control Type</value>
+	</data>
+	<data name="plControl.Help">
+		<value>Select the type of control to use for displaying the links</value>
+	</data>
+	<data name="List.Text">
+		<value>List</value>
+	</data>
+	<data name="Dropdown.Text">
+		<value>Dropdown</value>
+	</data>
+	<data name="ploptView.Text">
+		<value>List Display Format</value>
+	</data>
+	<data name="ploptView.Help">
+		<value>If using a List Control, select the display direction</value>
+	</data>
+	<data name="Vertical.Text">
+		<value>Vertical</value>
+	</data>
+	<data name="Horizontal.Text">
+		<value>Horizontal</value>
+	</data>
+	<data name="plInfo.Text">
+		<value>Display Info Link</value>
+	</data>
+	<data name="plInfo.Help">
+		<value>Select whether you want an optional (...) button that will show more info on the specific link</value>
+	</data>
+	<data name="plIcon.Text">
+		<value>Display Icon</value>
+	</data>
+	<data name="plInfo.Help">
+		<value>Select whether you want to display an icon to the left of each link</value>
+	</data>
+	<data name="ControlTitle_settings.Text">
+		<value>Links Settings</value>
+	</data>
+	<data name="ModuleHelp.Text">
+		<value>
+		&lt;h1&gt;About The Links Settings &lt;/h1&gt;
+		&lt;p&gt;The Links Module provides methods for displaying hyperlinks in a module. There are 3 Links Settings that controls the display and actions performed for a link within the module. &lt;/p&gt;
+		&lt;ul&gt;
+				&lt;li&gt;
+						&lt;div align="left"&gt;
+								&lt;b&gt;Control Type&lt;/b&gt; - refers to how a link is displayed, either in a list of hyperlinks, or a dropdown textbox. &lt;/div&gt;
+						&lt;ul&gt;
+								&lt;li&gt;
+										&lt;div align="left"&gt;
+												&lt;b&gt;
+														&lt;em&gt;List&lt;/em&gt;
+												&lt;/b&gt;– allows for displaying links with the familiar hyperlink format. Using this method all of the modules links are displayed in the area where the module is placed. &lt;/div&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+										&lt;div align="left"&gt;
+												&lt;b&gt;
+														&lt;em&gt;Dropdown&lt;/em&gt;
+												&lt;/b&gt;– this option is useful to minimize the area used by the module. All of the links appear in a user-defined order from a dropdown textbox. &lt;/div&gt;
+								&lt;/li&gt;
+						&lt;/ul&gt;
+				&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;ul&gt;
+				&lt;li&gt;
+						&lt;div align="left"&gt;
+								&lt;b&gt;List Display Format&lt;/b&gt; – When a Links module’s &lt;b&gt;Control Type&lt;/b&gt; is set to &lt;b&gt;&lt;em&gt;List&lt;/em&gt;&lt;/b&gt;, this option controls how the links are displayed directionally within the area where the module is placed. &lt;/div&gt;
+						&lt;ul&gt;
+								&lt;li&gt;
+										&lt;div align="left"&gt;
+												&lt;b&gt;
+														&lt;em&gt;Vertical&lt;/em&gt;
+												&lt;/b&gt;– links appear down the page &lt;/div&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+										&lt;div align="left"&gt;
+												&lt;b&gt;
+														&lt;em&gt;Horizontal &lt;/em&gt;
+												&lt;/b&gt;– links appear across the page. &lt;/div&gt;
+								&lt;/li&gt;
+						&lt;/ul&gt;
+				&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;ul&gt;
+				&lt;li&gt;
+						&lt;div align="left"&gt;
+								&lt;b&gt;Display Info Link&lt;/b&gt; – Displays an &lt;em&gt;ellipse&lt;/em&gt; (…) hyperlink that allows an optional brief text description of the link to display when a the ellipse is clicked.&lt;/div&gt;
+				&lt;/li&gt;
+		&lt;/ul&gt;
+</value>
+	</data>
+	<data name="plNoWrap.Text">
+		<value>Wrap Links</value>
+	</data>
+	<data name="plNoWrap.Help">
+		<value>If wrapping is disabled, the content area in which the links module resides will stretch to fit the link, otherwise the content areas width will be fixed.</value>
+	</data>
+</root>

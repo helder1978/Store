@@ -1,0 +1,5 @@
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\SkinObjects\bin\DotNetNuke.Modules.Store.SkinObjects.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\SkinObjects\bin\DotNetNuke.Modules.Store.SkinObjects.pdb
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\SkinObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\SkinObjects\obj\Debug\DotNetNuke.Modules.Store.SkinObjects.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\SkinObjects\obj\Debug\DotNetNuke.Modules.Store.SkinObjects.pdb

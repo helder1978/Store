@@ -1,0 +1,154 @@
+/* ==========================
+    CSS STYLES FOR HouseMenu
+   ==========================
+*/
+
+/* Horizontal Menu */
+#houseMenuH { /* menu wrapper div */
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	line-height: 18px;
+	white-space: nowrap;
+	width: auto;
+}
+
+#houseMenuH ul { /* all lists */
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	line-height: 18px;
+	white-space: nowrap;
+	z-index: 9999;
+}
+
+#houseMenuH a { /* all links, inside of list items */
+	display: block;
+	color : #333;
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-weight : bold;
+	text-decoration : none;
+	line-height: 18px;
+	background-color : #eee;
+	padding: 1px 6px 2px 6px;
+	width: 142px;
+	height: auto;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	width: auto;
+	/* end hack */
+}
+
+#houseMenuH li { /* all list items */
+	/* position: relative; */
+	display: inline;
+	list-style-type: none;
+	line-height: 18px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 142px;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	width: auto;
+	/* end hack */
+}
+
+#houseMenuH li a:hover {
+	color : white;
+	background-color : #369;
+}
+
+#houseMenuH li ul { /* second-level lists */
+	position: absolute;
+	/*background: transparent;*/
+	width: 162px; /* width of submenu, must be set so third-level list can get shifted over properly */
+	left: -9999px; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	border: solid 1px #999;
+	white-space: nowrap;
+	z-index: 7777;
+}
+
+#houseMenuH li ul ul { /* third-and-above-level lists */
+	/* position: absolute; */
+	margin: -21px 0 0 162px;
+	white-space: nowrap;
+	z-index: 8888;
+}
+
+#houseMenuH li:hover ul ul, 
+#houseMenuH li:hover ul ul ul, 
+#houseMenuH li.sfhover ul ul, 
+#houseMenuH li.sfhover ul ul ul {
+	left: -9999px;
+}
+
+#houseMenuH li:hover ul, 
+#houseMenuH li li:hover ul, 
+#houseMenuH li li li:hover ul, 
+#houseMenuH li.sfhover ul, 
+#houseMenuH li li.sfhover ul, 
+#houseMenuH li li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}
+
+#houseMenuH li li,
+#houseMenuH li li li,
+#houseMenuH li li li li { /* all items under the top level */
+	position: relative;
+	list-style-type: none;
+	opacity: .9;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+	width: 160px;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	width: auto;
+	/* end hack */
+}
+
+#houseMenuH li li a { /* all item links under the top level */
+	width: 160px;
+	/* hack for MacIE5 to ignore, while other browsers use \*/
+	width: 150px;
+	_width: 162px;
+	/* end hack */
+}
+
+#houseMenuH iframe {
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	z-index: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	display: block;
+}
+
+
+/* Applied to the parent item, if displayed, in either vertical or horizontal
+   orientation. Must follow other styles. */
+#houseMenuParentItem a
+{ /* all links under the parent item (li) */
+	color: #eeeeee;
+	background-color: #666;
+	text-decoration: none;
+}
+
+a#houseMenuParentLink
+{ /* parent link itself */
+	color: #eeeeee;
+	background-color: #333;
+	text-decoration: none;
+}
+
+a#houseMenuCurrentLink
+{ /* current link itself */
+	color: #ffffff;
+	background-color: #600;
+	text-decoration: none;
+}
+
+.ArrowPointer
+{
+	cursor: default;
+}

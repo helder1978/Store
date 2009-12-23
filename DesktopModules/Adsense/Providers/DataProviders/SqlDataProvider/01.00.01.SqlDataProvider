@@ -1,0 +1,63 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+update {databaseOwner}{objectQualifier}ModuleControls
+set    ControlSrc = 'DesktopModules/Adsense/Adsense.ascx'
+where  ControlSrc = 'Admin/Vendors/Adsense.ascx'
+and    ModuleDefId is not null
+GO
+
+update {databaseOwner}{objectQualifier}ModuleControls
+set    ControlSrc = 'DesktopModules/Adsense/EditAdsense.ascx'
+where  ControlSrc = 'Admin/Vendors/EditAdsense.ascx'
+and    ModuleDefId is not null
+GO
+
+delete
+from   {databaseOwner}{objectQualifier}ModuleControls
+where  ControlSrc = 'Admin/Vendors/EditAdsense.ascx'
+and    ModuleDefId is null
+GO
+
+declare @ModuleControlID int
+
+select @ModuleControlID = null
+
+select @ModuleControlID = ModuleControlID
+from   {databaseOwner}{objectQualifier}ModuleControls
+where  ModuleDefID is null
+and    ControlSrc = 'DesktopModules/Adsense/EditAdsense.ascx'
+
+if @ModuleControlID is null
+begin
+  insert into {databaseOwner}{objectQualifier}ModuleControls (
+    ControlKey,
+    ControlTitle,
+    ModuleDefID, 
+    ControlSrc, 
+    IconFile,
+    ControlType,
+    ViewOrder
+  )
+  values (
+    'Adsense',
+    'Google Adsense',
+    null,
+    'DesktopModules/Adsense/EditAdsense.ascx',
+    null,
+    1,
+    null
+  )
+end
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

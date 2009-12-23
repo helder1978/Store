@@ -1,0 +1,5 @@
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\TaxProviders\DefaultTaxProvider\bin\DotNetNuke.Modules.Store.Providers.Tax.DefaultTaxProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\TaxProviders\DefaultTaxProvider\bin\DotNetNuke.Modules.Store.Providers.Tax.DefaultTaxProvider.pdb
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\TaxProviders\DefaultTaxProvider\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\TaxProviders\DefaultTaxProvider\obj\Debug\DotNetNuke.Modules.Store.Providers.Tax.DefaultTaxProvider.dll
+C:\Inetpub\wwwroot\DotNetNuke_2\DesktopModules\Store\Providers\TaxProviders\DefaultTaxProvider\obj\Debug\DotNetNuke.Modules.Store.Providers.Tax.DefaultTaxProvider.pdb

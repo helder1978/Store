@@ -1,0 +1,76 @@
+/* 
+================================
+ Container Styles for DotNetNuke
+================================
+*/   
+
+.containermaster_blue {
+	width: 100%;
+	background-color: #dfe5f2;
+	border-right: #7994cb 1px solid; 
+	border-top: #7994cb 1px solid; 
+	border-left: #7994cb 1px solid; 
+	border-bottom: #7994cb 1px solid; 
+	-moz-border-radius-bottomleft: 15px; 
+	-moz-border-radius-bottomright: 15px; 
+	-moz-border-radius-topleft: 3px; 
+	-moz-border-radius-topright: 3px;
+}
+.containerrow1_blue {
+	background-image: url(gradient_LtBlue.jpg);
+}
+.containerrow2_blue {
+	background-color: #ffffff;
+}
+.ModuleTitle_MenuItem {
+	border: white 0px solid; /*override borders*/    
+}
+
+.ModuleTitle_MenuItem TD {  /*TD if menu is using tables*/
+	cursor: pointer; 
+	cursor: hand; 
+	color: black; 
+	font-family: Tahoma, Arial, Helvetica; 
+	font-size: 9pt; 
+	font-weight: bold; 
+	font-style: normal;
+	height: 21px;
+        white-space: nowrap;  /*Word wrapping menu item now optional*/
+        padding: 1px 3px 3px 1px;	
+}
+
+
+.ModuleTitle_MenuIcon {
+	cursor: pointer; 
+	cursor: hand; 
+	background-color: #EEEEEE; 
+	width: 15px;
+	height: 100%;   /*override the default height for icon so that menubreaks can have heights adjusted*/
+}
+
+.ModuleTitle_SubMenu 
+{
+	z-index: 1000; 
+	cursor: pointer; 
+	cursor: hand; 
+	background-color: #FFFFFF; 
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='DimGray', Direction=135, Strength=3); 
+	padding: 1px 1px 1px 1px;   /*explicitly set padding for sub-menus */
+}
+
+.ModuleTitle_MenuBreak  {
+	background-color: #EEEEEE; 
+	font-size: 1px; /*make sure you take out portal.css ModuleTitle_MenuBreak for this to work*/
+}
+
+.ModuleTitle_MenuItemSel {
+
+	cursor: pointer; 
+	cursor: hand; 
+	color: black; 
+	font-family: Tahoma, Arial, Helvetica; 
+	font-size: 9pt; 
+	font-weight: bold; 
+	font-style: normal;
+	background-color: #C1D2EE;
+}
