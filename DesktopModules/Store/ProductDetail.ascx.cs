@@ -697,7 +697,7 @@ namespace DotNetNuke.Modules.Store.WebControls
                     return btnAddToCartImg;
 
                 case "DETAILPDFIMG":
-                    if (productInfo.ProductPreview != "")
+                    if ((productInfo.ProductPreview != "") && (!productInfo.ProductPreview.Contains("_no_report_file_available.pdf")))
                     {
                         HyperLink hlDetaiPdfImg = new HyperLink();
                         hlDetaiPdfImg.NavigateUrl = "/Portals/0/documents/" + productInfo.ProductPreview;
@@ -714,7 +714,7 @@ namespace DotNetNuke.Modules.Store.WebControls
                         return imgDetaiPdfImg;
                     }
                 case "WHYBUYIMG":
-                    if (productInfo.DescriptionTwo.Length == 0)
+                    if ((productInfo.DescriptionTwo.Length == 0) || (catalogNav.IsTOC != Null.NullInteger))
                         return null;
                     else
                     {
@@ -725,7 +725,7 @@ namespace DotNetNuke.Modules.Store.WebControls
                     }
 
                 case "KEYINFOIMG":
-                    if (productInfo.DescriptionThree.Length == 0)
+                    if ((productInfo.DescriptionThree.Length == 0) || (catalogNav.IsTOC != Null.NullInteger))
                         return null;
                     else
                     {
@@ -734,6 +734,20 @@ namespace DotNetNuke.Modules.Store.WebControls
                         imgKeyInfoImg.ToolTip = "Key information provided in this Report";
                         return imgKeyInfoImg;
                     }
+
+                case "DESCRIPTIONIMG":
+                    Image imgDescriptionImg = new Image();
+                    if (catalogNav.IsTOC != Null.NullInteger)
+                    {
+                        imgDescriptionImg.ImageUrl = imagesPath + "shop_contents.gif";
+                        imgDescriptionImg.ToolTip = "Contents";
+                    }
+                    else
+                    {
+                        imgDescriptionImg.ImageUrl = imagesPath + "shop_description.gif";
+                        imgDescriptionImg.ToolTip = "Description";
+                    }
+                    return imgDescriptionImg;
 
                 case "DETAILHTMLIMG":
                     String productId = productInfo.ProductID.ToString();
@@ -768,13 +782,23 @@ namespace DotNetNuke.Modules.Store.WebControls
 
                 case "DESCRIPTIONTWO":
                     Label lblDescriptionTwo = new Label();
-                    lblDescriptionTwo.Text = System.Web.HttpUtility.HtmlDecode(productInfo.DescriptionTwo);
-                    return lblDescriptionTwo;
+                    if ((productInfo.DescriptionTwo.Length == 0) || (catalogNav.IsTOC != Null.NullInteger))
+                        return null;
+                    else
+                    {
+                        lblDescriptionTwo.Text = System.Web.HttpUtility.HtmlDecode(productInfo.DescriptionTwo);
+                        return lblDescriptionTwo;
+                    }
 
                 case "DESCRIPTIONTHREE":
                     Label lblDescriptionThree = new Label();
-                    lblDescriptionThree.Text = System.Web.HttpUtility.HtmlDecode(productInfo.DescriptionThree);
-                    return lblDescriptionThree;
+                    if ((productInfo.DescriptionThree.Length == 0) || (catalogNav.IsTOC != Null.NullInteger))
+                        return null;
+                    else
+                    {
+                        lblDescriptionThree.Text = System.Web.HttpUtility.HtmlDecode(productInfo.DescriptionThree);
+                        return lblDescriptionThree;
+                    }
 
                 case "DESCRIPTIONTAG":
                     Label lblDescriptionTag = new Label();

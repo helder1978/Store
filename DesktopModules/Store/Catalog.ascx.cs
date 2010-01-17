@@ -1364,7 +1364,8 @@ namespace DotNetNuke.Modules.Store.WebControls
                 ddListCategory.SelectedIndex = 0;
 
                 // Hack to clear the selected location / categories 
-                Response.Redirect("/Shop/BuyDataExtracts/tabid/97/Default.aspx");
+                //Response.Redirect("/Shop/BuyDataExtracts/tabid/97/Default.aspx");
+                Response.Redirect("/Shop/tabid/97/Default.aspx");
             }
             else
             {

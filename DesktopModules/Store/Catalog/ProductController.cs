@@ -34,6 +34,8 @@ using DotNetNuke.Common;
 using DotNetNuke.Common.Utilities;
 using DotNetNuke.Services.Search;
 
+using DotNetNuke.Services.Mail;
+
 namespace DotNetNuke.Modules.Store.Catalog
 {
 	/// <summary>
@@ -212,15 +214,15 @@ namespace DotNetNuke.Modules.Store.Catalog
         public SearchItemInfoCollection GetSearchItems(ModuleInfo moduleInfo)
 		{
 			// Create search item collection
-			SearchItemInfoCollection searchItemList = new SearchItemInfoCollection(); 
+			SearchItemInfoCollection searchItemList = new SearchItemInfoCollection();
 
-			if(moduleInfo.ModuleID == 621) // Only index through the main shop page navigation
+            string subject = "Canadean - Indexing executed for module " + moduleInfo.ModuleID;
+            if (moduleInfo.ModuleID == 422) // Only index through the main shop page navigation (possibilities: 422 [Shop,Reports], 514 [Data Extracts / Volumes by Beverage/Country], 621 [Shop/Search])
 			{
 				// Get all products
 				//ArrayList productList = GetPortalAllProducts(moduleInfo.PortalID);
 				//ArrayList productList = GetPortalProducts(moduleInfo.PortalID, false, false);   // canadean change: only index products that aren't archived 
 				ArrayList productList = GetCategoryProducts(4, false);   // canadean change: only index products that aren't archived (and real products [categoryId = 4], not DE [categoryId = 2])
-
 				foreach(ProductInfo product in productList)
 				{
 					// Get user identifier
@@ -240,7 +242,9 @@ namespace DotNetNuke.Modules.Store.Catalog
 					searchItemList.Add(searchItem);
 				}
 			}
-			return searchItemList;
+            string body = "Number of products added to index: " + searchItemList.Count;
+            Mail.SendMail("info@canadean.com", "helder1978@gmail.com", "", subject, body, "", "", "", "", "", "");
+            return searchItemList;
 		}
 
 		#endregion
