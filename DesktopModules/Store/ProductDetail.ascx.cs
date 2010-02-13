@@ -630,11 +630,11 @@ namespace DotNetNuke.Modules.Store.WebControls
                             && System.DateTime.Now > productInfo.SaleStartDate && System.DateTime.Now < productInfo.SaleEndDate)
                         {
                             //Product is on sale...
-                            lblPrice.Text = string.Format(Localization.GetString("SpecialOffer", this.LocalResourceFile), productInfo.UnitCost.ToString("C", LocalFormat), productInfo.SalePrice.ToString("C", LocalFormat));
+                            lblPrice.Text = string.Format(Localization.GetString("SpecialOffer", this.LocalResourceFile), productInfo.UnitCost.ToString("C0", LocalFormat), productInfo.SalePrice.ToString("C0", LocalFormat));
                         }
                         else
                         {
-                            lblPrice.Text = string.Format(Localization.GetString("Price", this.LocalResourceFile), productInfo.UnitCost.ToString("C", LocalFormat));
+                            lblPrice.Text = string.Format(Localization.GetString("Price", this.LocalResourceFile), productInfo.UnitCost.ToString("C0", LocalFormat));
                         }
                     }
                     else
@@ -653,11 +653,11 @@ namespace DotNetNuke.Modules.Store.WebControls
                             decimal dblVATPrice = (productInfo.UnitCost + (productInfo.UnitCost * (defaultTaxRate / 100)));
                             decimal dblVATSalePrice = (productInfo.SalePrice + (productInfo.SalePrice * (defaultTaxRate / 100)));
                             //Product is on sale...
-                            lblVATPrice.Text = string.Format(Localization.GetString("SpecialOffer", this.LocalResourceFile), dblVATPrice.ToString("C", LocalFormat), dblVATSalePrice.ToString("C", LocalFormat));
+                            lblVATPrice.Text = string.Format(Localization.GetString("SpecialOffer", this.LocalResourceFile), dblVATPrice.ToString("C0", LocalFormat), dblVATSalePrice.ToString("C0", LocalFormat));
                         }
                         else
                         {
-                            lblVATPrice.Text = string.Format(Localization.GetString("VATPrice", this.LocalResourceFile), (productInfo.UnitCost + (productInfo.UnitCost * (defaultTaxRate / 100))).ToString("C", LocalFormat));
+                            lblVATPrice.Text = string.Format(Localization.GetString("VATPrice", this.LocalResourceFile), (productInfo.UnitCost + (productInfo.UnitCost * (defaultTaxRate / 100))).ToString("C0", LocalFormat));
                         }
                     }
                     return lblVATPrice;

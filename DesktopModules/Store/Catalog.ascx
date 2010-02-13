@@ -211,8 +211,12 @@
     <div class="CatalogDEDDWrapperTemplate">
         <div class="demoHeading">beverage category volumes by country</div>
         <table>
-            <tr><td colspan="3" class="Normal">Category consumption volumes for all years between 1998 and 2013 can be purchased here for
-                &pound;50 per category and country. Simply select from the countries and categories listed and click 'Add to Cart'.
+            <tr><td colspan="3" class="Normal">Category consumption volumes for all years between 1999 and 2014
+			  can be purchased here for &pound;50 per category and country.
+			  Data for years 1999-2008 are actual, 2009 is provisional, and
+			  2010 to 2014 are forecasts.
+            </td></tr>
+            <tr><td colspan="3" class="Normal">Simply select from the countries and categories listed and click 'Add to Cart'.
                 To place an order, give your selection a reference and click 'Add to your shopping basket'.
             </td></tr>
             <tr>

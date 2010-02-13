@@ -244,7 +244,7 @@
     <value>Report file.</value>
   </data>  
   <data name="labelPreview.Text" xml:space="preserve">
-    <value>Preview File</value>
+    <value>Sample Pages</value>
   </data>
   <data name="labelPreview.Help" xml:space="preserve">
     <value>File with the report preview.</value>
